@@ -1,0 +1,9 @@
+{
+  "name": "socialkit-website",
+  "version": "1.0.0",
+  "description": "Socialy - Social Media Marketing Agency Website",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "dev": "python -m http.server 8080"
+  }
+}

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" fill="none">
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#001630" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001630"/>
+      <stop offset="100%" stop-color="#082142"/>
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#FF9E40"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FF7A00" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main Browser Window Mockup -->
+  <g filter="url(#cardShadow)">
+    <!-- Browser Frame -->
+    <rect x="40" y="30" width="720" height="440" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+    
+    <!-- Browser Top Bar -->
+    <path d="M40 46 C40 37.16 47.16 30 56 30 H744 C752.84 30 760 37.16 760 46 V72 H40 Z" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <!-- Window Controls -->
+    <circle cx="64" cy="51" r="5.5" fill="#EF4444"/>
+    <circle cx="82" cy="51" r="5.5" fill="#F59E0B"/>
+    <circle cx="100" cy="51" r="5.5" fill="#10B981"/>
+    
+    <!-- Address Bar -->
+    <rect x="130" y="41" width="340" height="20" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="145" y="55" font-family="'Poppins', sans-serif" font-size="10" font-weight="500" fill="#64748B">https://aryprobrands.com</text>
+    
+    <!-- Web Content Area -->
+    <g transform="translate(40, 72)">
+      <!-- Hero Inside Mockup (Deep Navy) -->
+      <rect x="0" y="0" width="720" height="240" fill="url(#screenGrad)"/>
+      
+      <!-- Nav inside Mockup -->
+      <text x="40" y="36" font-family="'Poppins', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Pro<tspan fill="#FF7A00">Media</tspan></text>
+      <text x="450" y="34" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#E2E8F0">Services</text>
+      <text x="520" y="34" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#E2E8F0">Branding</text>
+      <text x="590" y="34" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#E2E8F0">Portfolio</text>
+      <rect x="645" y="20" width="45" height="20" rx="10" fill="#FF7A00"/>
+      <text x="654" y="33" font-family="'Poppins', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">Hire Us</text>
+
+      <!-- Mockup Hero Text -->
+      <rect x="40" y="65" width="130" height="18" rx="9" fill="url(#badgeGrad)" stroke="#FF7A00" stroke-width="1"/>
+      <text x="52" y="77" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#FF7A00">⚡ 360° DIGITAL SOLUTIONS</text>
+
+      <text x="40" y="112" font-family="'Poppins', sans-serif" font-size="22" font-weight="800" fill="#FFFFFF">Modern Web &amp; Technology</text>
+      <text x="40" y="138" font-family="'Poppins', sans-serif" font-size="22" font-weight="800" fill="#FF7A00">That Drives Real Growth</text>
+      <text x="40" y="165" font-family="'Poppins', sans-serif" font-size="10" font-weight="400" fill="#CBD5E1">High performance responsive web applications and conversion funnels.</text>
+      
+      <!-- CTA Button -->
+      <rect x="40" y="182" width="110" height="32" rx="16" fill="url(#accentOrange)"/>
+      <text x="56" y="202" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Get Started →</text>
+      
+      <!-- Mockup Floating Dashboard Cards (Right side) -->
+      <g transform="translate(430, 60)">
+        <rect x="0" y="0" width="240" height="150" rx="12" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.25"/>
+        <text x="20" y="28" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Campaign Performance</text>
+        <text x="20" y="46" font-family="'Poppins', sans-serif" font-size="9" font-weight="400" fill="#94A3B8">Live Lead Conversion Rate</text>
+        
+        <!-- Metric Box -->
+        <text x="20" y="80" font-family="'Poppins', sans-serif" font-size="26" font-weight="800" fill="#FF7A00">+370%</text>
+        <text x="125" y="78" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#10B981">▲ 48.6k Visitors</text>
+
+        <!-- Mini Bar Graph -->
+        <rect x="20" y="105" width="16" height="28" rx="4" fill="#FF7A00" fill-opacity="0.4"/>
+        <rect x="44" y="95" width="16" height="38" rx="4" fill="#FF7A00" fill-opacity="0.6"/>
+        <rect x="68" y="85" width="16" height="48" rx="4" fill="#FF7A00" fill-opacity="0.8"/>
+        <rect x="92" y="70" width="16" height="63" rx="4" fill="#FF7A00"/>
+        <rect x="116" y="80" width="16" height="53" rx="4" fill="#38BDF8"/>
+        <rect x="140" y="65" width="16" height="68" rx="4" fill="#10B981"/>
+        <rect x="164" y="55" width="16" height="78" rx="4" fill="#FF7A00"/>
+        <rect x="188" y="45" width="16" height="88" rx="4" fill="#FFFFFF"/>
+      </g>
+      
+      <!-- Lower Mockup White Section (3 Feature Cards) -->
+      <g transform="translate(0, 240)">
+        <rect x="0" y="0" width="720" height="128" fill="#F8FAFC"/>
+        
+        <!-- Card 1: Branding -->
+        <rect x="30" y="18" width="200" height="92" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <circle cx="55" cy="42" r="14" fill="#FF7A00" fill-opacity="0.12"/>
+        <text x="49" y="47" font-family="'Poppins', sans-serif" font-size="14" fill="#FF7A00">🎨</text>
+        <text x="80" y="40" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#001630">Branding &amp; Design</text>
+        <text x="80" y="54" font-family="'Poppins', sans-serif" font-size="9" font-weight="500" fill="#64748B">Apparel, Caps, Mugs</text>
+        <text x="40" y="85" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">Identity systems &amp; merch</text>
+
+        <!-- Card 2: Web & Tech -->
+        <rect x="260" y="18" width="200" height="92" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <circle cx="285" cy="42" r="14" fill="#FF7A00" fill-opacity="0.12"/>
+        <text x="279" y="47" font-family="'Poppins', sans-serif" font-size="14" fill="#FF7A00">💻</text>
+        <text x="310" y="40" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#001630">Web Development</text>
+        <text x="310" y="54" font-family="'Poppins', sans-serif" font-size="9" font-weight="500" fill="#64748B">Ultra-fast web platforms</text>
+        <text x="270" y="85" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">Scalable cloud hosting</text>
+
+        <!-- Card 3: Media Production -->
+        <rect x="490" y="18" width="200" height="92" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <circle cx="515" cy="42" r="14" fill="#FF7A00" fill-opacity="0.12"/>
+        <text x="509" y="47" font-family="'Poppins', sans-serif" font-size="14" fill="#FF7A00">🎬</text>
+        <text x="540" y="40" font-family="'Poppins', sans-serif" font-size="11" font-weight="700" fill="#001630">Video &amp; Media</text>
+        <text x="540" y="54" font-family="'Poppins', sans-serif" font-size="9" font-weight="500" fill="#64748B">Cinematic storytelling</text>
+        <text x="500" y="85" font-family="'Poppins', sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">Live streaming &amp; photo</text>
+      </g>
+    </g>
+  </g>
+</svg>
