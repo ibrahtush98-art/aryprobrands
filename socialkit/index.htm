@@ -37,7 +37,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel='stylesheet' id='template-kit-export-css' href='wp-content/plugins/template-kit-export/assets/public/template-kit-export-public.css?ver=1.0.23' media='all'>
 <link rel='stylesheet' id='hello-elementor-css' href='wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.5.1' media='all'>
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.5.1' media='all'>
-<link rel='stylesheet' id='promedia-theme-css' href='wp-content/themes/hello-elementor/assets/css/promedia-theme.css?ver=26.0' media='all'>
+<link rel='stylesheet' id='promedia-theme-css' href='wp-content/themes/hello-elementor/assets/css/promedia-theme.css?ver=34.0' media='all'>
 <link rel='stylesheet' id='hello-elementor-header-footer-css' href='wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.5.1' media='all'>
 <link rel='stylesheet' id='elementor-frontend-css' href='wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.2.4' media='all'>
 <link rel='stylesheet' id='elementor-post-3-css' href='wp-content/uploads/sites/58/elementor/css/post-3.css?ver=1788239718' media='all'>
@@ -548,124 +548,252 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		</div>
 					</div>
 		</section>
-				<!-- Growth System: End-to-End Sticky Stacking Presentation Cards -->
-				<section id="our-growth-system" class="arypro-growth-system-section">
-					<!-- Header Anchor - Strictly Unbounded Typography (Zero Play Buttons/Indicators) -->
-					<div class="growth-system-header">
-						<span class="growth-system-kicker">OUR GROWTH SYSTEM</span>
-						<h2 class="growth-system-headline">FROM BRAND TO BUSINESS GROWTH.</h2>
-					</div>
-
-					<!-- Stacking Cards Stack: End-to-End, Scroll Reveals Next Card -->
-					<div class="growth-cards-stack">
+				<!-- Growth System: Scroll-Pinned Single-Card Sequence (White Theme) -->
+				<section id="our-growth-system" class="elementor-section elementor-top-section elementor-element elementor-element-592bce81 arypro-growth-pinned-section" data-id="592bce81" data-element_type="section">
+					
+					<!-- Sticky Viewport Container (Pinned to viewport while scrolling through timeline) -->
+					<div class="growth-pinned-viewport">
 						
-						<!-- CARD 1: STRATEGY (Text Left) -->
-						<div class="growth-stack-card card-align-left" style="z-index: 1;">
-							<div class="card-image-bg">
-								<img src="wp-content/uploads/sites/58/custom/growth_card_strategy.jpg" alt="We Design Strategies That Work" loading="eager" />
-								<div class="card-overlay-gradient"></div>
-							</div>
-							<div class="card-content-wrap">
-								<div class="card-text-box">
-									<span class="card-slide-kicker">STRATEGY</span>
-									<h3 class="card-stage-title">We Design Strategies That Work</h3>
-									<p class="card-stage-desc">We analyze market dynamics, customer psychology, and competitive white spaces to architect actionable, high-ROI commercial roadmaps.</p>
-								</div>
-							</div>
+						<!-- Header Anchor - Clean Unbounded Typography -->
+						<div class="growth-system-header">
+							<span class="growth-system-kicker">OUR GROWTH SYSTEM</span>
+							<h2 class="growth-system-headline">FROM BRAND TO BUSINESS GROWTH.</h2>
 						</div>
 
-						<!-- CARD 2: BRAND (Text Right) -->
-						<div class="growth-stack-card card-align-right" style="z-index: 2;">
-							<div class="card-image-bg">
-								<img src="wp-content/uploads/sites/58/custom/growth_card_brand.jpg" alt="We Build Brands That Command Authority" loading="lazy" />
-								<div class="card-overlay-gradient"></div>
-							</div>
-							<div class="card-content-wrap">
-								<div class="card-text-box">
-									<span class="card-slide-kicker">BRAND IDENTITY</span>
-									<h3 class="card-stage-title">We Build Brands That Command Authority</h3>
-									<p class="card-stage-desc">We craft distinctive visual identities, bespoke logo systems, and comprehensive brand guidelines that establish instant market leadership and trust.</p>
+						<!-- Single-Card Display Stage (All 5 cards occupy the same spatial frame) -->
+						<div class="growth-deck-frame" id="growthDeckFrame">
+							
+							<!-- CARD 1: STRATEGY (Active at 0%) -->
+							<div class="growth-deck-card card-align-left is-active" data-card-index="0">
+								<div class="card-image-bg">
+									<img src="wp-content/uploads/sites/58/custom/growth_card_strategy.jpg" alt="We Design Strategies That Work" loading="eager" />
+									<div class="card-overlay-gradient"></div>
+								</div>
+								<div class="card-content-wrap">
+									<div class="card-text-box">
+										<span class="card-slide-kicker">STRATEGY</span>
+										<h3 class="card-stage-title">We Design Strategies That Work</h3>
+										<p class="card-stage-desc">We analyze market dynamics, customer psychology, and competitive white spaces to architect actionable, high-ROI commercial roadmaps.</p>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- CARD 3: CONTENT (Text Left) -->
-						<div class="growth-stack-card card-align-left" style="z-index: 3;">
-							<div class="card-image-bg">
-								<img src="wp-content/uploads/sites/58/custom/growth_card_content.jpg" alt="We Produce Creative That Connects" loading="lazy" />
-								<div class="card-overlay-gradient"></div>
-							</div>
-							<div class="card-content-wrap">
-								<div class="card-text-box">
-									<span class="card-slide-kicker">CONTENT PRODUCTION</span>
-									<h3 class="card-stage-title">We Produce Creative That Connects</h3>
-									<p class="card-stage-desc">We shoot cinema-grade video, capture commercial photography, and direct persuasive storytelling that stops the scroll and drives real customer action.</p>
+							<!-- CARD 2: BRAND IDENTITY (Active at 25%) -->
+							<div class="growth-deck-card card-align-right" data-card-index="1">
+								<div class="card-image-bg">
+									<img src="wp-content/uploads/sites/58/custom/growth_card_brand.jpg" alt="We Build Brands That Command Authority" loading="lazy" />
+									<div class="card-overlay-gradient"></div>
+								</div>
+								<div class="card-content-wrap">
+									<div class="card-text-box">
+										<span class="card-slide-kicker">BRAND IDENTITY</span>
+										<h3 class="card-stage-title">We Build Brands That Command Authority</h3>
+										<p class="card-stage-desc">We craft distinctive visual identities, bespoke logo systems, and comprehensive brand guidelines that establish instant market leadership and trust.</p>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- CARD 4: DISTRIBUTION (Text Right) -->
-						<div class="growth-stack-card card-align-right" style="z-index: 4;">
-							<div class="card-image-bg">
-								<img src="wp-content/uploads/sites/58/custom/growth_card_distrib.jpg" alt="We Execute Distribution That Dominates" loading="lazy" />
-								<div class="card-overlay-gradient"></div>
-							</div>
-							<div class="card-content-wrap">
-								<div class="card-text-box">
-									<span class="card-slide-kicker">MULTI-CHANNEL REACH</span>
-									<h3 class="card-stage-title">We Execute Distribution That Dominates</h3>
-									<p class="card-stage-desc">We deploy structured multi-channel distribution across Instagram, TikTok, LinkedIn, and YouTube to build engaged, high-converting audiences.</p>
+							<!-- CARD 3: CONTENT PRODUCTION (Active at 50%) -->
+							<div class="growth-deck-card card-align-left" data-card-index="2">
+								<div class="card-image-bg">
+									<img src="wp-content/uploads/sites/58/custom/growth_card_content.jpg" alt="We Produce Creative That Connects" loading="lazy" />
+									<div class="card-overlay-gradient"></div>
+								</div>
+								<div class="card-content-wrap">
+									<div class="card-text-box">
+										<span class="card-slide-kicker">CONTENT PRODUCTION</span>
+										<h3 class="card-stage-title">We Produce Creative That Connects</h3>
+										<p class="card-stage-desc">We shoot cinema-grade video, capture commercial photography, and direct persuasive storytelling that stops the scroll and drives real customer action.</p>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- CARD 5: ADVERTISING (Text Left) -->
-						<div class="growth-stack-card card-align-left" style="z-index: 5;">
-							<div class="card-image-bg">
-								<img src="wp-content/uploads/sites/58/custom/growth_card_adverts.jpg" alt="We Run Campaigns That Scale" loading="lazy" />
-								<div class="card-overlay-gradient"></div>
-							</div>
-							<div class="card-content-wrap">
-								<div class="card-text-box">
-									<span class="card-slide-kicker">PAID ADVERTISING</span>
-									<h3 class="card-stage-title">We Run Campaigns That Scale</h3>
-									<p class="card-stage-desc">We manage data-driven paid acquisition campaigns on Meta and Google with precision audience targeting to maximize return on ad spend.</p>
+							<!-- CARD 4: MULTI-CHANNEL & CAMPAIGNS (Active at 75%) -->
+							<div class="growth-deck-card card-align-right" data-card-index="3">
+								<div class="card-image-bg">
+									<img src="wp-content/uploads/sites/58/custom/growth_card_adverts.jpg" alt="We Execute Distribution & Campaigns That Scale" loading="lazy" />
+									<div class="card-overlay-gradient"></div>
+								</div>
+								<div class="card-content-wrap">
+									<div class="card-text-box">
+										<span class="card-slide-kicker">MULTI-CHANNEL REACH</span>
+										<h3 class="card-stage-title">We Execute Distribution & Campaigns That Scale</h3>
+										<p class="card-stage-desc">We deploy structured multi-channel distribution and data-driven acquisition campaigns across Meta, Google, and TikTok to generate predictable, compounding revenue.</p>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- CARD 6: LEADS (Text Right) -->
-						<div class="growth-stack-card card-align-right" style="z-index: 6;">
-							<div class="card-image-bg">
-								<img src="wp-content/uploads/sites/58/custom/growth_card_leads.jpg" alt="We Generate Leads That Convert" loading="lazy" />
-								<div class="card-overlay-gradient"></div>
-							</div>
-							<div class="card-content-wrap">
-								<div class="card-text-box">
-									<span class="card-slide-kicker">LEAD GENERATION</span>
-									<h3 class="card-stage-title">We Generate Leads That Convert</h3>
-									<p class="card-stage-desc">We build high-converting commercial funnels that turn passive interest into qualified sales inquiries, direct bookings, and predictable revenue.</p>
+							<!-- CARD 5: BUSINESS COMPOUNDING (Active at 100%) -->
+							<div class="growth-deck-card card-align-center card-culmination" data-card-index="4">
+								<div class="card-image-bg">
+									<img src="wp-content/uploads/sites/58/custom/growth_card_growth.jpg" alt="We Engineer Growth That Compounds" loading="lazy" />
+									<div class="card-overlay-gradient"></div>
+								</div>
+								<div class="card-content-wrap">
+									<div class="card-text-box">
+										<span class="card-slide-kicker">BUSINESS COMPOUNDING</span>
+										<h3 class="card-stage-title highlight">We Engineer Growth That Compounds</h3>
+										<p class="card-stage-desc">We implement conversion optimization, advanced analytics, and scalable marketing infrastructure for long-term, sustainable enterprise growth.</p>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<!-- CARD 7: GROWTH (Center Culmination) -->
-						<div class="growth-stack-card card-align-center" style="z-index: 7;">
-							<div class="card-image-bg">
-								<img src="wp-content/uploads/sites/58/custom/growth_card_growth.jpg" alt="We Engineer Growth That Compounds" loading="lazy" />
-								<div class="card-overlay-gradient"></div>
-							</div>
-							<div class="card-content-wrap">
-								<div class="card-text-box">
-									<span class="card-slide-kicker">BUSINESS COMPOUNDING</span>
-									<h3 class="card-stage-title highlight">We Engineer Growth That Compounds</h3>
-									<p class="card-stage-desc">We implement conversion optimization, advanced analytics, and scalable marketing infrastructure for long-term, sustainable enterprise growth.</p>
-								</div>
-							</div>
 						</div>
 
 					</div>
+
 				</section>
+				
+				<!-- Scroll-Driven Pinned Single-Card Reveal Timeline Engine -->
+				<script id="growth-pinned-sequence-engine">
+				(function() {
+					function initPinnedCardSequence() {
+						var section = document.getElementById('our-growth-system');
+						if (!section) return;
+						var deck = section.querySelector('.growth-deck-frame');
+						if (!deck) return;
+						var cards = deck.querySelectorAll('.growth-deck-card');
+						var totalCards = cards.length;
+						if (totalCards === 0) return;
+
+						var ticking = false;
+
+						function updateCards() {
+							var rect = section.getBoundingClientRect();
+							var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+							var totalScrollDistance = rect.height - windowHeight;
+
+							if (totalScrollDistance <= 0) {
+								ticking = false;
+								return;
+							}
+
+							// Scroll progress through pinned section: 0.0 at top of pinned zone to 1.0 at exit
+							var currentScroll = -rect.top;
+							var progress = currentScroll / totalScrollDistance;
+							progress = Math.max(0, Math.min(1, progress));
+
+							// Map 0..1 progress across (totalCards - 1) transition intervals
+							var floatIndex = progress * (totalCards - 1);
+							var baseIndex = Math.floor(floatIndex);
+							baseIndex = Math.max(0, Math.min(totalCards - 2, baseIndex));
+							var fraction = floatIndex - baseIndex;
+
+							// Continuous transition window with dynamic pop-up curve:
+							// 0.00 - 0.08: Current card resting (100% active, 0% next)
+							// 0.08 - 0.92: Next card pops up over current card
+							// 0.92 - 1.00: Next card resting (100% active, 0% current)
+							var transProgress = 0;
+							if (fraction <= 0.08) {
+								transProgress = 0;
+							} else if (fraction >= 0.92) {
+								transProgress = 1;
+							} else {
+								var rawT = (fraction - 0.08) / 0.84;
+								// Cubic ease-in-out curve for elevation pop
+								transProgress = rawT < 0.5 ? 4 * rawT * rawT * rawT : 1 - Math.pow(-2 * rawT + 2, 3) / 2;
+							}
+
+							var isAtFinal = progress >= 0.999;
+
+							for (var i = 0; i < totalCards; i++) {
+								var card = cards[i];
+
+								if (isAtFinal) {
+									// At the absolute end of the section, lock exclusively to final card
+									if (i === totalCards - 1) {
+										card.style.setProperty('opacity', '1', 'important');
+										card.style.setProperty('visibility', 'visible', 'important');
+										card.style.setProperty('transform', 'translate3d(0, 0px, 0) scale(1)', 'important');
+										card.style.setProperty('pointer-events', 'auto', 'important');
+										card.style.setProperty('z-index', '3', 'important');
+										card.classList.add('is-active');
+									} else {
+										card.style.setProperty('opacity', '0', 'important');
+										card.style.setProperty('visibility', 'hidden', 'important');
+										card.style.setProperty('transform', 'translate3d(0, -40px, 0) scale(0.94)', 'important');
+										card.style.setProperty('pointer-events', 'none', 'important');
+										card.style.setProperty('z-index', '0', 'important');
+										card.classList.remove('is-active');
+									}
+								} else if (i === baseIndex) {
+									if (transProgress === 0) {
+										// Sole resting active card
+										card.style.setProperty('opacity', '1', 'important');
+										card.style.setProperty('visibility', 'visible', 'important');
+										card.style.setProperty('transform', 'translate3d(0, 0px, 0) scale(1)', 'important');
+										card.style.setProperty('pointer-events', 'auto', 'important');
+										card.style.setProperty('z-index', '2', 'important');
+										card.classList.add('is-active');
+									} else {
+										// Outgoing card transitioning up and dissolving
+										var outOpacity = (1 - transProgress).toFixed(3);
+										var outY = (-40 * transProgress).toFixed(1);
+										var outScale = (1 - 0.06 * transProgress).toFixed(3);
+										card.style.setProperty('opacity', outOpacity, 'important');
+										card.style.setProperty('visibility', outOpacity > 0.01 ? 'visible' : 'hidden', 'important');
+										card.style.setProperty('transform', 'translate3d(0, ' + outY + 'px, 0) scale(' + outScale + ')', 'important');
+										card.style.setProperty('pointer-events', outOpacity > 0.5 ? 'auto' : 'none', 'important');
+										card.style.setProperty('z-index', '1', 'important');
+										card.classList.toggle('is-active', outOpacity > 0.5);
+									}
+								} else if (i === baseIndex + 1) {
+									if (transProgress === 0) {
+										// Next card waiting to pop up
+										card.style.setProperty('opacity', '0', 'important');
+										card.style.setProperty('visibility', 'hidden', 'important');
+										card.style.setProperty('transform', 'translate3d(0, 70px, 0) scale(0.92)', 'important');
+										card.style.setProperty('pointer-events', 'none', 'important');
+										card.style.setProperty('z-index', '1', 'important');
+										card.classList.remove('is-active');
+									} else {
+										// Incoming card rising up and popping into view
+										var inOpacity = transProgress.toFixed(3);
+										var inY = (70 * (1 - transProgress)).toFixed(1);
+										var inScale = (0.92 + 0.08 * transProgress).toFixed(3);
+										card.style.setProperty('opacity', inOpacity, 'important');
+										card.style.setProperty('visibility', inOpacity > 0.01 ? 'visible' : 'hidden', 'important');
+										card.style.setProperty('transform', 'translate3d(0, ' + inY + 'px, 0) scale(' + inScale + ')', 'important');
+										card.style.setProperty('pointer-events', inOpacity > 0.5 ? 'auto' : 'none', 'important');
+										card.style.setProperty('z-index', '3', 'important');
+										card.classList.toggle('is-active', inOpacity > 0.5);
+									}
+								} else {
+									// All other cards completely hidden and inert
+									var distantY = i < baseIndex ? '-40px' : '70px';
+									var distantScale = i < baseIndex ? '0.94' : '0.92';
+									card.style.setProperty('opacity', '0', 'important');
+									card.style.setProperty('visibility', 'hidden', 'important');
+									card.style.setProperty('transform', 'translate3d(0, ' + distantY + ', 0) scale(' + distantScale + ')', 'important');
+									card.style.setProperty('pointer-events', 'none', 'important');
+									card.style.setProperty('z-index', '0', 'important');
+									card.classList.remove('is-active');
+								}
+							}
+
+							ticking = false;
+						}
+
+						function requestTick() {
+							if (!ticking) {
+								window.requestAnimationFrame(updateCards);
+								ticking = true;
+							}
+						}
+
+						window.addEventListener('scroll', requestTick, { passive: true });
+						window.addEventListener('resize', requestTick, { passive: true });
+						document.addEventListener('scroll', requestTick, { passive: true });
+						updateCards();
+					}
+
+					if (document.readyState === 'loading') {
+						document.addEventListener('DOMContentLoaded', initPinnedCardSequence);
+					} else {
+						initPinnedCardSequence();
+					}
+				})();
+				</script>
 				<!-- What We Believe Section (Side-to-Side Editorial Flow with Organic Winding Spline & Scroll Pop-Up) -->
 				<section id="what-we-believe" class="arypro-beliefs-editorial-section">
 					<div class="beliefs-ambient-glow glow-top"></div>

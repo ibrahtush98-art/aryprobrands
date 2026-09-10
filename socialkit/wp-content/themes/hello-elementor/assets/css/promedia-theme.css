@@ -305,18 +305,18 @@ footer.elementor-location-footer,
   margin: 0 auto !important;
 }
 
-/* Global Overflow & Mobile Reset */
+/* Global Overflow & Mobile Reset (Using clip to preserve position:sticky functionality) */
 html, body {
-  overflow-x: hidden !important;
+  overflow-x: clip !important;
   max-width: 100vw !important;
   width: 100% !important;
 }
 *, *::before, *::after {
   box-sizing: border-box !important;
 }
-.elementor-section {
-  overflow: hidden !important;
+.elementor-section:not(.arypro-growth-pinned-section) {
   max-width: 100% !important;
+  overflow: visible !important;
 }
 p, h1, h2, h3, h4, h5, h6, span, li, a {
   overflow-wrap: break-word !important;
@@ -436,226 +436,288 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 }
 
 /* ==========================================================================
-   GROWTH SYSTEM (END-TO-END STACKING CARDS ON SCROLL)
+   GROWTH SYSTEM (SCROLL-PINNED SINGLE-CARD SEQUENCE - WHITE THEME)
    ========================================================================== */
-.arypro-growth-system-section {
+#our-growth-system,
+.arypro-growth-pinned-section {
   position: relative !important;
-  background: #000E20 !important;
-  padding: 100px 24px 130px 24px !important;
+  background-color: #FFFFFF !important;
+  background: #FFFFFF !important;
   width: 100% !important;
-  box-sizing: border-box !important;
+  height: 400vh !important; /* 4 transition segments for 5 cards */
+  margin: 0 !important;
+  padding: 0 !important;
   overflow: visible !important;
+  box-sizing: border-box !important;
 }
 
+/* Sticky Pinned Viewport Container */
+.growth-pinned-viewport {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 16px 20px !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  background-color: #FFFFFF !important;
+  background: #FFFFFF !important;
+  z-index: 100 !important;
+}
+
+/* Header Anchor - Clean Unbounded Typography */
 .growth-system-header {
   text-align: center !important;
   max-width: 860px !important;
-  margin: 0 auto 65px auto !important;
+  margin: 0 auto 12px auto !important;
+  flex-shrink: 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
 .growth-system-kicker {
   font-family: 'Space Grotesk', sans-serif !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   font-weight: 700 !important;
   color: #FF7A00 !important;
   text-transform: uppercase !important;
-  letter-spacing: 2px !important;
+  letter-spacing: 2.2px !important;
   display: block !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 4px !important;
 }
 
 .growth-system-headline {
   font-family: 'Space Grotesk', sans-serif !important;
-  font-size: clamp(28px, 4vw, 44px) !important;
+  font-size: clamp(20px, 2.4vw, 32px) !important;
   font-weight: 800 !important;
-  color: #FFFFFF !important;
+  color: #001630 !important;
   line-height: 1.15 !important;
-  letter-spacing: -0.6px !important;
+  letter-spacing: -0.5px !important;
   margin: 0 !important;
 }
 
-/* Stacking Cards Container */
-.growth-cards-stack {
+/* Single-Card Display Frame (Houses all cards in identical spatial position) */
+.growth-deck-frame {
   position: relative !important;
-  max-width: 1140px !important;
-  margin: 0 auto !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0 !important;
-}
-
-/* Each Sticky Card - Slides Up, Sticks, and Next Card Covers on Scroll */
-.growth-stack-card {
-  position: sticky !important;
-  top: 95px !important;
   width: 100% !important;
-  height: 480px !important;
-  margin-bottom: 75px !important;
-  border-radius: 26px !important;
+  max-width: 1080px !important;
+  height: min(450px, 58vh) !important;
+  border-radius: 24px !important;
   overflow: hidden !important;
-  background: #001630 !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.35), 0 25px 60px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 25px 60px -15px rgba(0, 22, 48, 0.24), 0 0 0 1px rgba(0, 22, 48, 0.08) !important;
+  background-color: #001630 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Individual Card (Occupies the exact frame coordinates, morphs via scroll progress) */
+.growth-deck-card {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, 70px, 0) scale(0.92);
+  will-change: transform, opacity;
+  pointer-events: none;
+  z-index: 1;
   box-sizing: border-box !important;
+  transition: none !important;
 }
 
-.growth-stack-card:last-child {
-  margin-bottom: 0 !important;
+/* Active initial state before scroll */
+.growth-deck-card.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0px, 0) scale(1);
+  pointer-events: auto;
+  z-index: 2;
 }
 
-.growth-stack-card .card-image-bg {
+/* Card Background Image */
+.growth-deck-card .card-image-bg {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   z-index: 1 !important;
+  overflow: hidden !important;
 }
 
-.growth-stack-card .card-image-bg img {
+.growth-deck-card .card-image-bg img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   display: block !important;
 }
 
-/* Overlays */
-.growth-stack-card.card-align-left .card-overlay-gradient {
+/* Overlay Gradients for Depth and Readability */
+.growth-deck-card .card-overlay-gradient {
   position: absolute !important;
   inset: 0 !important;
-  background: linear-gradient(90deg, rgba(0, 14, 32, 0.96) 0%, rgba(0, 14, 32, 0.88) 46%, rgba(0, 14, 32, 0.22) 100%) !important;
-  z-index: 1 !important;
-}
-
-.growth-stack-card.card-align-right .card-overlay-gradient {
-  position: absolute !important;
-  inset: 0 !important;
-  background: linear-gradient(270deg, rgba(0, 14, 32, 0.96) 0%, rgba(0, 14, 32, 0.88) 46%, rgba(0, 14, 32, 0.22) 100%) !important;
-  z-index: 1 !important;
-}
-
-.growth-stack-card.card-align-center .card-overlay-gradient {
-  position: absolute !important;
-  inset: 0 !important;
-  background: radial-gradient(circle at center, rgba(0, 14, 32, 0.84) 0%, rgba(0, 10, 24, 0.96) 100%) !important;
-  z-index: 1 !important;
-}
-
-/* Card Content Area */
-.growth-stack-card .card-content-wrap {
-  position: relative !important;
   z-index: 2 !important;
+  pointer-events: none !important;
+}
+
+.growth-deck-card.card-align-left .card-overlay-gradient {
+  background: linear-gradient(90deg, rgba(0, 14, 32, 0.95) 0%, rgba(0, 14, 32, 0.85) 45%, rgba(0, 14, 32, 0.15) 100%) !important;
+}
+
+.growth-deck-card.card-align-right .card-overlay-gradient {
+  background: linear-gradient(270deg, rgba(0, 14, 32, 0.95) 0%, rgba(0, 14, 32, 0.85) 45%, rgba(0, 14, 32, 0.15) 100%) !important;
+}
+
+.growth-deck-card.card-align-center .card-overlay-gradient {
+  background: radial-gradient(circle at center, rgba(0, 14, 32, 0.65) 0%, rgba(0, 10, 24, 0.95) 100%) !important;
+}
+
+/* Card Content Wrap */
+.growth-deck-card .card-content-wrap {
+  position: relative !important;
+  z-index: 3 !important;
   height: 100% !important;
+  width: 100% !important;
   display: flex !important;
   align-items: center !important;
-  padding: 45px 65px !important;
+  padding: 50px 70px !important;
   box-sizing: border-box !important;
 }
 
-.growth-stack-card.card-align-left .card-content-wrap {
+.growth-deck-card.card-align-left .card-content-wrap {
   justify-content: flex-start !important;
-  text-align: left !important;
 }
 
-.growth-stack-card.card-align-right .card-content-wrap {
+.growth-deck-card.card-align-right .card-content-wrap {
   justify-content: flex-end !important;
+}
+
+.growth-deck-card.card-align-center .card-content-wrap {
+  justify-content: center !important;
+}
+
+/* Integrated Direct Blended Text (No Sub-Cards / No Inner Boxes) */
+.growth-deck-card .card-text-box {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  max-width: 540px !important;
+  box-sizing: border-box !important;
   text-align: left !important;
 }
 
-.growth-stack-card.card-align-center .card-content-wrap {
-  justify-content: center !important;
+.growth-deck-card.card-align-center .card-text-box {
+  max-width: 720px !important;
   text-align: center !important;
 }
 
-.growth-stack-card .card-text-box {
-  max-width: 540px !important;
-}
-
-.growth-stack-card.card-align-center .card-text-box {
-  max-width: 700px !important;
-  margin: 0 auto !important;
-}
-
-.growth-stack-card .card-slide-kicker {
+.growth-deck-card .card-slide-kicker {
   font-family: 'Space Grotesk', sans-serif !important;
-  font-size: 13px !important;
+  font-size: 13.5px !important;
   font-weight: 700 !important;
   color: #FF7A00 !important;
   text-transform: uppercase !important;
-  letter-spacing: 2px !important;
+  letter-spacing: 2.5px !important;
   display: block !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 14px !important;
 }
 
-.growth-stack-card .card-stage-title {
+.growth-deck-card .card-stage-title {
   font-family: 'Space Grotesk', sans-serif !important;
-  font-size: clamp(26px, 3.2vw, 36px) !important;
+  font-size: clamp(28px, 3.4vw, 42px) !important;
   font-weight: 800 !important;
   color: #FFFFFF !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.4px !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.5px !important;
   margin: 0 0 16px 0 !important;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.6) !important;
 }
 
-.growth-stack-card .card-stage-title.highlight {
+.growth-deck-card .card-stage-title.highlight {
   color: #FF9E40 !important;
 }
 
-.growth-stack-card .card-stage-desc {
+.growth-deck-card .card-stage-desc {
   font-family: 'Mulish', 'Poppins', sans-serif !important;
-  font-size: 16px !important;
+  font-size: 16.5px !important;
   line-height: 1.7 !important;
-  color: #CBD5E1 !important;
+  color: #E2E8F0 !important;
   margin: 0 !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
 }
 
-/* Mobile & Tablet Responsiveness */
+/* Tablet & Mobile Responsiveness */
 @media (max-width: 860px) {
-  .arypro-growth-system-section {
-    padding: 60px 16px 80px 16px !important;
+  #our-growth-system,
+  .arypro-growth-pinned-section {
+    height: 480vh !important;
+  }
+  .growth-pinned-viewport {
+    padding: 20px 16px !important;
   }
   .growth-system-header {
-    margin-bottom: 35px !important;
+    margin-bottom: 18px !important;
   }
   .growth-system-headline {
-    font-size: 24px !important;
+    font-size: 22px !important;
   }
-  .growth-stack-card {
-    top: 75px !important;
-    height: 400px !important;
-    margin-bottom: 45px !important;
+  .growth-deck-frame {
+    height: 480px !important;
+    border-radius: 20px !important;
+    max-width: 100% !important;
+  }
+  .growth-deck-card {
     border-radius: 20px !important;
   }
-  .growth-stack-card .card-content-wrap {
+  .growth-deck-card .card-content-wrap {
     padding: 24px 20px !important;
     align-items: flex-end !important;
     justify-content: flex-start !important;
-    text-align: left !important;
   }
-  .growth-stack-card .card-overlay-gradient,
-  .growth-stack-card.card-align-right .card-overlay-gradient,
-  .growth-stack-card.card-align-center .card-overlay-gradient {
+  .growth-deck-card .card-overlay-gradient,
+  .growth-deck-card.card-align-left .card-overlay-gradient,
+  .growth-deck-card.card-align-right .card-overlay-gradient,
+  .growth-deck-card.card-align-center .card-overlay-gradient {
     background: linear-gradient(180deg, rgba(0, 14, 32, 0.2) 0%, rgba(0, 14, 32, 0.88) 45%, rgba(0, 14, 32, 0.98) 100%) !important;
   }
-  .growth-stack-card .card-stage-title {
+  .growth-deck-card .card-text-box,
+  .growth-deck-card.card-align-center .card-text-box {
+    padding: 0 !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+  }
+  .growth-deck-card .card-stage-title {
     font-size: 20px !important;
     margin-bottom: 8px !important;
   }
-  .growth-stack-card .card-stage-desc {
+  .growth-deck-card .card-stage-desc {
     font-size: 13.5px !important;
-    line-height: 1.5 !important;
+    line-height: 1.45 !important;
   }
 }
 
 @media (max-width: 480px) {
-  .growth-stack-card {
-    top: 65px !important;
-    height: 370px !important;
-    margin-bottom: 35px !important;
+  .growth-deck-frame {
+    height: 440px !important;
   }
-  .growth-stack-card .card-stage-title {
-    font-size: 18px !important;
+  .growth-deck-card .card-stage-title {
+    font-size: 17px !important;
   }
-  .growth-stack-card .card-stage-desc {
+  .growth-deck-card .card-stage-desc {
     font-size: 12.5px !important;
   }
 }
