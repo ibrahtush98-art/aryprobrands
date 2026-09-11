@@ -112,24 +112,42 @@ header.elementor-location-header,
 /* 2. Top Hero Section with Wave */
 .elementor-element-3241b653,
 .elementor-element-595c27ef,
+.elementor-element-2e5d3505,
 .elementor-element-54024fe6,
-.elementor-element-749e75eb {
+.elementor-element-749e75eb,
+.elementor-element-3aaacdc9,
+.elementor-element-15319209 {
   background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
 }
 
 /* Hero Section Typography */
 .elementor-element-3241b653 .elementor-heading-title,
 .elementor-element-595c27ef .elementor-heading-title,
+.elementor-element-2e5d3505 .elementor-heading-title,
 .elementor-element-54024fe6 .elementor-heading-title,
-.elementor-element-749e75eb .elementor-heading-title {
+.elementor-element-749e75eb .elementor-heading-title,
+.elementor-element-3aaacdc9 .elementor-heading-title,
+.elementor-element-15319209 .elementor-heading-title,
+.elementor-element-20d66b33 .elementor-heading-title,
+.elementor-element-20d66b33 h1,
+.elementor-2085 .elementor-element-20d66b33 h1 {
   color: #FFFFFF !important;
+  font-family: 'Space Grotesk', -apple-system, sans-serif !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .elementor-element-3241b653 p,
 .elementor-element-595c27ef p,
+.elementor-element-2e5d3505 p,
 .elementor-element-54024fe6 p,
-.elementor-element-749e75eb p {
+.elementor-element-749e75eb p,
+.elementor-element-3aaacdc9 p,
+.elementor-element-15319209 p {
   color: #E2E8F0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* Hero Wave Divider Fill (matches body background #F8FAFC) */
@@ -1985,68 +2003,6 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   backdrop-filter: blur(18px) !important;
   -webkit-backdrop-filter: blur(18px) !important;
   border: 1px solid rgba(254, 91, 0, 0.4) !important;
-  border-radius: 20px !important;
-  padding: 32px 34px !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4) !important;
-}
-
-.elementor-2127 .elementor-element.elementor-element-3eec8eef .elementor-field-label {
-  color: #FFFFFF !important;
-  font-family: 'Space Grotesk', sans-serif !important;
-  font-size: 13.5px !important;
-  font-weight: 600 !important;
-  margin-bottom: 6px !important;
-}
-
-.elementor-2127 .elementor-element.elementor-element-3eec8eef .elementor-field-group .elementor-field {
-  background-color: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  color: #FFFFFF !important;
-  border-radius: 8px !important;
-  padding: 12px 14px !important;
-  font-family: 'Mulish', sans-serif !important;
-}
-
-.elementor-2127 .elementor-element.elementor-element-3eec8eef .elementor-field-group .elementor-field:focus {
-  border-color: #FE5B00 !important;
-  background-color: rgba(255, 255, 255, 0.12) !important;
-  outline: none !important;
-  box-shadow: 0 0 0 2px rgba(254, 91, 0, 0.3) !important;
-}
-
-.elementor-2127 .elementor-element.elementor-element-3eec8eef button.elementor-button {
-  background-color: #FE5B00 !important;
-  color: #FFFFFF !important;
-  font-family: 'Space Grotesk', sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 700 !important;
-  border-radius: 25px !important;
-  padding: 14px 32px !important;
-  border: 1px solid #FE5B00 !important;
-  box-shadow: 0 6px 20px rgba(254, 91, 0, 0.4) !important;
-  transition: all 0.3s ease !important;
-  cursor: pointer !important;
-  width: 100% !important;
-}
-
-.elementor-2127 .elementor-element.elementor-element-3eec8eef button.elementor-button:hover {
-  background-color: #FFFFFF !important;
-  color: #072450 !important;
-  border-color: #FFFFFF !important;
-  transform: translateY(-2px) !important;
-}
-
-/* Contact Us Locations & Map */
-.elementor-2127 .elementor-element.elementor-element-16efa038 {
-  padding: 50px 0 30px 0 !important;
-}
-
-.elementor-2127 .elementor-element.elementor-element-78f0497b .elementor-heading-title {
-  color: #072450 !important;
-  font-family: 'Space Grotesk', sans-serif !important;
-  font-size: clamp(24px, 3.2vw, 36px) !important;
-  font-weight: 800 !important;
-  margin-bottom: 25px !important;
 }
 
 .elementor-2127 .elementor-element.elementor-element-6ea4fd0a {
@@ -2145,67 +2101,220 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
 }
 
-.elementor-2087 .elementor-element.elementor-element-73c18419 .elementor-testimonial-job {
-  color: #FFA33E !important;
+
+/* ==========================================================================
+   GLOBAL HEADING & TEXT VISIBILITY ASSURANCE (NEVER BLANK OR HIDDEN)
+   ========================================================================== */
+.elementor-invisible {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.elementor-heading-title,
+.elementor-widget-heading .elementor-heading-title,
+.elementor-text-editor > p,
+.arypro-hero-title {
+  opacity: 1 !important;
+  visibility: visible !important;
+  clip-path: none !important;
+  max-height: none !important;
+}
+
+/* Hero Section Headings (Always Bright & Bold) */
+.elementor-element-3241b653 h1,
+.elementor-element-3241b653 .elementor-heading-title,
+.elementor-element-595c27ef h1,
+.elementor-element-595c27ef .elementor-heading-title,
+.elementor-element-54024fe6 h1,
+.elementor-element-54024fe6 .elementor-heading-title,
+.elementor-element-749e75eb h1,
+.elementor-element-749e75eb .elementor-heading-title,
+h1.elementor-heading-title {
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25) !important;
 }
 
 /* ==========================================================================
-   SLEEK ONE-SIDED CURTAIN TEXT REVEAL TRANSITIONS (GLOBAL)
+   NON-BLOCKING SLEEK TEXT ANIMATIONS (SAFE & ALWAYS VISIBLE)
    ========================================================================== */
-
-/* 1. Left-to-Right Curtain Reveal (Wipes smoothly from Left to Right like a single curtain drawn open) */
-.arypro-curtain-ltr {
-  opacity: 0;
-  clip-path: inset(0 100% 0 0);
-  transform: translateX(-20px);
-  filter: blur(3px);
-  transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 0.65s ease,
-              filter 0.65s ease !important;
-  will-change: clip-path, transform, opacity, filter;
-}
-
-.arypro-curtain-ltr.is-curtain-visible {
-  opacity: 1 !important;
-  clip-path: inset(0 0% 0 0) !important;
-  transform: translateX(0) !important;
-  filter: blur(0px) !important;
-}
-
-/* 2. Right-to-Left Curtain Reveal (Wipes smoothly from Right to Left like a single curtain drawn open) */
+.arypro-curtain-ltr,
 .arypro-curtain-rtl {
-  opacity: 0;
-  clip-path: inset(0 0 0 100%);
-  transform: translateX(20px);
-  filter: blur(3px);
-  transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-              opacity 0.65s ease,
-              filter 0.65s ease !important;
-  will-change: clip-path, transform, opacity, filter;
-}
-
-.arypro-curtain-rtl.is-curtain-visible {
   opacity: 1 !important;
-  clip-path: inset(0 0 0 0) !important;
-  transform: translateX(0) !important;
-  filter: blur(0px) !important;
+  visibility: visible !important;
+  clip-path: none !important;
+  transform: none !important;
+  filter: none !important;
 }
 
-/* Delay modifiers for sequential text elements */
-.arypro-curtain-delay-1 { transition-delay: 0.12s !important; }
-.arypro-curtain-delay-2 { transition-delay: 0.22s !important; }
-.arypro-curtain-delay-3 { transition-delay: 0.32s !important; }
+/* ==========================================================================
+   HIRE A TALENT ON-DEMAND SECTION STYLING
+   ========================================================================== */
+.arypro-talent-card {
+  background: #FFFFFF !important;
+  border-radius: 18px !important;
+  padding: 32px 24px 28px 24px !important;
+  box-shadow: 0 10px 35px rgba(7, 36, 80, 0.08) !important;
+  border: 1px solid rgba(7, 36, 80, 0.08) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  height: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
 
-/* Accessibility fallback */
-@media (prefers-reduced-motion: reduce) {
-  .arypro-curtain-ltr,
-  .arypro-curtain-rtl {
-    opacity: 1 !important;
-    clip-path: none !important;
-    transform: none !important;
-    filter: none !important;
-    transition: none !important;
-  }
+.arypro-talent-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 45px rgba(254, 91, 0, 0.15), 0 10px 25px rgba(7, 36, 80, 0.12) !important;
+  border-color: rgba(254, 91, 0, 0.35) !important;
+}
+
+.arypro-talent-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FE5B00 0%, #FFA33E 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.arypro-talent-card:hover::before {
+  opacity: 1;
+}
+
+.arypro-talent-avatar-box {
+  position: relative !important;
+  margin-bottom: 20px !important;
+}
+
+.arypro-talent-avatar {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 3.5px solid #FE5B00 !important;
+  box-shadow: 0 8px 24px rgba(254, 91, 0, 0.2) !important;
+}
+
+.arypro-talent-status {
+  position: absolute !important;
+  bottom: 4px !important;
+  right: 4px !important;
+  background: #10B981 !important;
+  color: #FFFFFF !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  padding: 3px 8px !important;
+  border-radius: 12px !important;
+  border: 2px solid #FFFFFF !important;
+  letter-spacing: 0.3px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.arypro-talent-title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #072450 !important;
+  margin: 0 0 6px 0 !important;
+  line-height: 1.3 !important;
+}
+
+.arypro-talent-role {
+  display: inline-block !important;
+  background: rgba(254, 91, 0, 0.09) !important;
+  color: #FE5B00 !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  padding: 4px 12px !important;
+  border-radius: 20px !important;
+  margin-bottom: 14px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.arypro-talent-desc {
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  color: #64748B !important;
+  margin: 0 0 22px 0 !important;
+  flex-grow: 1 !important;
+}
+
+.arypro-talent-skills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  justify-content: center !important;
+  margin-bottom: 22px !important;
+}
+
+.arypro-skill-pill {
+  background: #F1F5F9 !important;
+  color: #475569 !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
+  padding: 3px 10px !important;
+  border-radius: 6px !important;
+  border: 1px solid #E2E8F0 !important;
+}
+
+.arypro-talent-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  background: #072450 !important;
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  padding: 12px 20px !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 14px rgba(7, 36, 80, 0.2) !important;
+}
+
+.arypro-talent-btn:hover {
+  background: #FE5B00 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 6px 20px rgba(254, 91, 0, 0.4) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Hire a Talent Callout Banner */
+.arypro-hire-banner {
+  background: linear-gradient(135deg, #072450 0%, #0D3772 100%) !important;
+  border-radius: 20px !important;
+  padding: 44px 36px !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 16px 40px rgba(7, 36, 80, 0.25) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  text-align: center !important;
+  margin-top: 36px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.arypro-hire-banner::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(254, 91, 0, 0.22) 0%, rgba(254, 91, 0, 0) 70%);
+  pointer-events: none;
 }
