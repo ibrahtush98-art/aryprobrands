@@ -1,6 +1,6 @@
 /* ==========================================================================
    ARYPRO / PROMEDIA GROUP OFFICIAL BRAND SYSTEM OVERRIDE
-   Deep Blue: #001630 | Vibrant Orange: #FF7A00 | White: #FFFFFF | Slate: #475569
+   Deep Blue: #072450 | Vibrant Orange: #FE5B00 | White: #FFFFFF | Slate: #475569
    ========================================================================== */
 
 /* Typography */
@@ -12,8 +12,8 @@ body, h1, h2, h3, h4, h5, h6, .elementor-heading-title, .elementor-item, .elemen
 header.elementor-location-header,
 .elementor-138 .elementor-element-a383149,
 .elementor-138 .elementor-element-1021f2e {
-  background-color: #001630 !important;
-  border-bottom: 1px solid rgba(255, 122, 0, 0.2) !important;
+  background-color: #072450 !important;
+  border-bottom: 1px solid rgba(254, 91, 0, 0.2) !important;
 }
 
 /* Nav Menu Links in Header */
@@ -27,12 +27,12 @@ header.elementor-location-header,
 
 .elementor-138 .elementor-nav-menu--main .elementor-item:hover,
 .elementor-138 .elementor-nav-menu--main .elementor-item.elementor-item-active {
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
 }
 
 .elementor-138 .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after,
 .elementor-138 .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item-active:after {
-  background-color: #FF7A00 !important;
+  background-color: #FE5B00 !important;
   height: 3px !important;
   border-radius: 2px !important;
 }
@@ -41,13 +41,13 @@ header.elementor-location-header,
 .elementor-138 .elementor-button,
 .elementor-138 .elementor-element-0380544 .elementor-button,
 .elementor-138 .elementor-element-d177d70 .elementor-button {
-  background-color: #FF7A00 !important;
+  background-color: #FE5B00 !important;
   color: #FFFFFF !important;
   border-radius: 25px !important;
   font-weight: 700 !important;
   padding: 10px 26px !important;
-  box-shadow: 0 4px 15px rgba(255, 122, 0, 0.35) !important;
-  border: 1px solid #FF7A00 !important;
+  box-shadow: 0 4px 15px rgba(254, 91, 0, 0.35) !important;
+  border: 1px solid #FE5B00 !important;
   transition: all 0.3s ease !important;
 }
 
@@ -55,7 +55,7 @@ header.elementor-location-header,
 .elementor-138 .elementor-element-0380544 .elementor-button:hover,
 .elementor-138 .elementor-element-d177d70 .elementor-button:hover {
   background-color: #FFFFFF !important;
-  color: #001630 !important;
+  color: #072450 !important;
   border-color: #FFFFFF !important;
   transform: translateY(-2px);
 }
@@ -63,19 +63,19 @@ header.elementor-location-header,
 /* Mobile Toggle Hamburger */
 .elementor-menu-toggle {
   color: #FFFFFF !important;
-  background-color: rgba(255, 122, 0, 0.15) !important;
+  background-color: rgba(254, 91, 0, 0.15) !important;
   border-radius: 8px !important;
-  border: 1px solid rgba(255, 122, 0, 0.4) !important;
+  border: 1px solid rgba(254, 91, 0, 0.4) !important;
 }
 .elementor-menu-toggle i, .elementor-menu-toggle svg {
-  fill: #FF7A00 !important;
-  color: #FF7A00 !important;
+  fill: #FE5B00 !important;
+  color: #FE5B00 !important;
 }
 
 /* Dropdown Menu */
 .elementor-nav-menu--dropdown {
-  background-color: #001630 !important;
-  border: 1px solid rgba(255, 122, 0, 0.2) !important;
+  background-color: #072450 !important;
+  border: 1px solid rgba(254, 91, 0, 0.2) !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
 }
 .elementor-nav-menu--dropdown a {
@@ -83,8 +83,30 @@ header.elementor-location-header,
 }
 .elementor-nav-menu--dropdown a:hover,
 .elementor-nav-menu--dropdown a.elementor-item-active {
-  color: #FF7A00 !important;
-  background-color: rgba(255, 122, 0, 0.1) !important;
+  color: #FE5B00 !important;
+  background-color: rgba(254, 91, 0, 0.1) !important;
+}
+
+/* Brand Logo Sizing & Display */
+.elementor-138 .elementor-element-232f077 img,
+.elementor-138 .elementor-element-c764585 img,
+.elementor-138 .elementor-widget-image img {
+  max-height: 52px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  transition: transform 0.3s ease !important;
+}
+
+.elementor-138 .elementor-widget-image a:hover img {
+  transform: scale(1.04);
+}
+
+.elementor-135 .elementor-widget-image img,
+.elementor-135 img[src*="socialy-logo"] {
+  max-height: 85px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
 }
 
 /* 2. Top Hero Section with Wave */
@@ -92,7 +114,7 @@ header.elementor-location-header,
 .elementor-element-595c27ef,
 .elementor-element-54024fe6,
 .elementor-element-749e75eb {
-  background: linear-gradient(135deg, #001630 0%, #082142 50%, #001630 100%) !important;
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
 }
 
 /* Hero Section Typography */
@@ -117,10 +139,10 @@ header.elementor-location-header,
 
 /* Hero Star Rating & Reviews */
 .elementor-star-rating i.elementor-star-full {
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
 }
 .elementor-element-1394a747 h6 {
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
   font-weight: 700 !important;
 }
 .elementor-element-70c0d65a h6 {
@@ -131,12 +153,12 @@ header.elementor-location-header,
 .elementor-element-6e204e14 .elementor-button,
 .elementor-element-2c35b62b .elementor-button,
 .elementor-button.elementor-size-sm {
-  background-color: #FF7A00 !important;
+  background-color: #FE5B00 !important;
   color: #FFFFFF !important;
   font-weight: 700 !important;
   border-radius: 30px !important;
-  box-shadow: 0 4px 18px rgba(255, 122, 0, 0.4) !important;
-  border: 1px solid #FF7A00 !important;
+  box-shadow: 0 4px 18px rgba(254, 91, 0, 0.4) !important;
+  border: 1px solid #FE5B00 !important;
   transition: all 0.3s ease !important;
 }
 
@@ -144,7 +166,7 @@ header.elementor-location-header,
 .elementor-element-2c35b62b .elementor-button:hover,
 .elementor-button.elementor-size-sm:hover {
   background-color: #FFFFFF !important;
-  color: #001630 !important;
+  color: #072450 !important;
   border-color: #FFFFFF !important;
   transform: translateY(-2px);
 }
@@ -153,22 +175,22 @@ header.elementor-location-header,
 .elementor-element-6794adde .elementor-column {
   background-color: #FFFFFF !important;
   border-radius: 16px !important;
-  box-shadow: 0 10px 30px rgba(0, 22, 48, 0.12) !important;
-  border: 1px solid rgba(0, 22, 48, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(7, 36, 80, 0.12) !important;
+  border: 1px solid rgba(7, 36, 80, 0.08) !important;
 }
 .elementor-counter-number,
 .elementor-counter-number-suffix {
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
   font-weight: 800 !important;
 }
 .elementor-element-26d02eff h5 {
-  color: #001630 !important;
+  color: #072450 !important;
   font-weight: 700 !important;
 }
 
 /* 4. Headings & Body styling across the site */
 h1, h2, h3, h4, h5, h6, .elementor-heading-title {
-  color: #001630;
+  color: #072450;
 }
 p, .elementor-text-editor {
   color: #475569;
@@ -176,24 +198,52 @@ p, .elementor-text-editor {
 
 /* Service / Feature Icon Boxes */
 .elementor-icon-box-icon .elementor-icon {
-  background-color: rgba(255, 122, 0, 0.1) !important;
-  color: #FF7A00 !important;
-  fill: #FF7A00 !important;
+  background-color: rgba(254, 91, 0, 0.1) !important;
+  color: #FE5B00 !important;
+  fill: #FE5B00 !important;
   border-radius: 12px !important;
   transition: all 0.3s ease !important;
 }
 .elementor-widget-icon-box:hover .elementor-icon {
-  background-color: #FF7A00 !important;
+  background-color: #FE5B00 !important;
   color: #FFFFFF !important;
   fill: #FFFFFF !important;
   transform: translateY(-3px);
 }
 
-/* 5. Footer Styling (Deep Blue with Orange Accents) */
+/* 5. Footer Styling (Deep Navy, White Logo, 3/4 Reduced Height, Social Icons Only) */
 footer.elementor-location-footer,
 .elementor-135 .elementor-element-d2fbde {
-  background: linear-gradient(180deg, #001630 0%, #000E20 100%) !important;
-  border-top: 3px solid #FF7A00 !important;
+  background: linear-gradient(180deg, #072450 0%, #031428 100%) !important;
+  border-top: 3px solid #FE5B00 !important;
+  padding: 36px 0 22px 0 !important;
+}
+
+.elementor-135 .elementor-element-4149395 {
+  padding: 0 0 16px 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 16px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.elementor-135 .elementor-element-1d717d7 {
+  padding: 0 0 16px 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+.elementor-135 .elementor-element-8f4c1b7 {
+  padding: 14px 0 0 0 !important;
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.elementor-135 img[src*="socialy-logo"] {
+  max-height: 48px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  filter: none !important;
 }
 
 .elementor-135 h1, .elementor-135 h2, .elementor-135 h3, .elementor-135 h4, .elementor-135 h5, .elementor-135 h6,
@@ -209,13 +259,52 @@ footer.elementor-location-footer,
 
 .elementor-135 a:hover,
 .elementor-135 .elementor-icon-list-item:hover .elementor-icon-list-text {
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
 }
 
 .elementor-135 .elementor-icon-list-icon i,
 .elementor-135 .elementor-icon-list-icon svg {
-  color: #FF7A00 !important;
-  fill: #FF7A00 !important;
+  color: #FE5B00 !important;
+  fill: #FE5B00 !important;
+}
+
+/* AryPro Modern Sleek Social Icon Buttons */
+.arypro-footer-socials {
+  display: flex !important;
+  gap: 10px !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+
+.arypro-social-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #FFFFFF !important;
+  font-size: 15px !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.arypro-social-btn i {
+  color: #FFFFFF !important;
+  transition: color 0.3s ease !important;
+}
+
+.arypro-social-btn:hover {
+  background: #FE5B00 !important;
+  border-color: #FE5B00 !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 18px rgba(254, 91, 0, 0.45) !important;
+}
+
+.arypro-social-btn:hover i {
+  color: #FFFFFF !important;
 }
 
 /* Footer Social Icons */
@@ -225,7 +314,7 @@ footer.elementor-location-footer,
   transition: all 0.3s ease !important;
 }
 .elementor-social-icon:hover {
-  background-color: #FF7A00 !important;
+  background-color: #FE5B00 !important;
   color: #FFFFFF !important;
   transform: translateY(-3px);
 }
@@ -235,23 +324,23 @@ footer.elementor-location-footer,
   border: 1px solid #CBD5E1 !important;
   border-radius: 8px !important;
   background-color: #FFFFFF !important;
-  color: #001630 !important;
+  color: #072450 !important;
 }
 .elementor-field-group .elementor-field:focus {
-  border-color: #FF7A00 !important;
-  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.2) !important;
+  border-color: #FE5B00 !important;
+  box-shadow: 0 0 0 3px rgba(254, 91, 0, 0.2) !important;
   outline: none !important;
 }
 .elementor-field-type-submit button {
-  background-color: #FF7A00 !important;
+  background-color: #FE5B00 !important;
   color: #FFFFFF !important;
   font-weight: 700 !important;
   border-radius: 8px !important;
   border: none !important;
-  box-shadow: 0 4px 15px rgba(255, 122, 0, 0.3) !important;
+  box-shadow: 0 4px 15px rgba(254, 91, 0, 0.3) !important;
 }
 .elementor-field-type-submit button:hover {
-  background-color: #001630 !important;
+  background-color: #072450 !important;
   color: #FFFFFF !important;
 }
 
@@ -275,15 +364,19 @@ footer.elementor-location-footer,
 }
 
 /* ==========================================================================
-   TESTIMONIAL SECTION
+   TESTIMONIAL SECTION (Kenyan & Premium Aesthetic)
    ========================================================================== */
 .elementor-element-7ca207e3 {
   background-color: #FAF8F5 !important;
-  background-size: cover !important;
+  background-image: none !important;
+  padding: 5em 0em 4em 0em !important;
+}
+.elementor-element-7ca207e3 > .elementor-shape-top .elementor-shape-fill {
+  fill: #F8FAFC !important;
 }
 .elementor-element-7ca207e3 .elementor-heading-title,
 .elementor-element-51a76aa3 .elementor-heading-title {
-  color: #001630 !important;
+  color: #072450 !important;
   font-size: clamp(24px, 3.2vw, 36px) !important;
   font-weight: 800 !important;
   text-align: center !important;
@@ -292,7 +385,7 @@ footer.elementor-location-footer,
 }
 .elementor-element-4606739b .elementor-star-rating i,
 .elementor-element-4606739b .elementor-star-full {
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
   font-size: 26px !important;
 }
 .elementor-element-7ca207e3 .elementor-element-3449350b p,
@@ -302,7 +395,230 @@ footer.elementor-location-footer,
   line-height: 1.75 !important;
   text-align: center !important;
   font-weight: 500 !important;
-  margin: 0 auto !important;
+  max-width: 780px !important;
+  margin: 0 auto 20px auto !important;
+}
+.arypro-testimonial-author-card {
+  background-color: #FFFFFF !important;
+  box-shadow: 0 10px 30px rgba(7, 36, 80, 0.08) !important;
+  border: 1px solid rgba(7, 36, 80, 0.08) !important;
+  border-radius: 14px !important;
+  padding: 16px 36px !important;
+  display: table !important;
+  margin: 12px auto 20px auto !important;
+  text-align: center !important;
+}
+.arypro-author-name {
+  color: #072450 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  margin: 0 0 4px 0 !important;
+}
+.arypro-author-title {
+  color: #64748B !important;
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+.elementor-element-7eba26d6 .elementor-counter-number,
+.elementor-element-7eba26d6 .elementor-counter-number-prefix,
+.elementor-element-7eba26d6 .elementor-counter-number-suffix {
+  color: #FE5B00 !important;
+  font-weight: 800 !important;
+}
+.elementor-element-678fe862 .elementor-heading-title {
+  color: #072450 !important;
+  font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   STATS SECTION (10+ CLIENTS SCALE & METRICS)
+   ========================================================================== */
+.elementor-element-6ed9644a {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+  padding: 5em 0em 5em 0em !important;
+}
+.elementor-element-1395ec9e .elementor-heading-title {
+  color: #072450 !important;
+  font-size: clamp(26px, 3.2vw, 38px) !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+}
+.elementor-element-58b25f4a p {
+  color: #475569 !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+.elementor-element-1dab41b3 > .elementor-element-populated,
+.elementor-element-75ffea43 > .elementor-element-populated,
+.elementor-element-15cb1542 > .elementor-element-populated,
+.elementor-element-4c5dce5c > .elementor-element-populated {
+  background-color: #FFFFFF !important;
+  border-radius: 18px !important;
+  box-shadow: 0 10px 25px rgba(7, 36, 80, 0.07) !important;
+  border: 1px solid rgba(7, 36, 80, 0.08) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+.elementor-element-1dab41b3:hover > .elementor-element-populated,
+.elementor-element-75ffea43:hover > .elementor-element-populated,
+.elementor-element-15cb1542:hover > .elementor-element-populated,
+.elementor-element-4c5dce5c:hover > .elementor-element-populated {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 36px rgba(7, 36, 80, 0.12) !important;
+}
+.elementor-element-6ed9644a .elementor-counter-number {
+  color: #072450 !important;
+  font-weight: 800 !important;
+}
+.elementor-element-17d64e3f .elementor-heading-title,
+.elementor-element-7a6843f1 .elementor-heading-title,
+.elementor-element-3a0223e9 .elementor-heading-title,
+.elementor-element-2026fdd1 .elementor-heading-title {
+  color: #FE5B00 !important;
+  font-weight: 800 !important;
+}
+.elementor-element-5aec2dba .elementor-heading-title,
+.elementor-element-6a181751 .elementor-heading-title,
+.elementor-element-6b37e6ed .elementor-heading-title,
+.elementor-element-52479eef .elementor-heading-title {
+  color: #475569 !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
+/* ==========================================================================
+   FAQ & CTA SECTION (Deep Navy Brand Gradient & Vibrant Orange Accents)
+   ========================================================================== */
+.elementor-element-b273509,
+.elementor-2085 .elementor-element.elementor-element-b273509:not(.elementor-motion-effects-element-type-background),
+.elementor-element-7fd76305,
+.elementor-element-0c3e649,
+.elementor-element-3aaacdc9 {
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+  background-image: none !important;
+  position: relative !important;
+}
+.elementor-element-b273509 > .elementor-shape-top .elementor-shape-fill,
+.elementor-element-b273509 > .elementor-shape-bottom .elementor-shape-fill,
+.elementor-element-7fd76305 > .elementor-shape-top .elementor-shape-fill,
+.elementor-element-7fd76305 > .elementor-shape-bottom .elementor-shape-fill,
+.elementor-element-0c3e649 > .elementor-shape-top .elementor-shape-fill,
+.elementor-element-0c3e649 > .elementor-shape-bottom .elementor-shape-fill,
+.elementor-element-3aaacdc9 > .elementor-shape-bottom .elementor-shape-fill {
+  fill: #F8FAFC !important;
+}
+
+/* FAQ Question Titles */
+.elementor-element-b273509 .elementor-element-36f7476 .elementor-heading-title,
+.elementor-element-b273509 .elementor-element-1ec72a87 .elementor-heading-title,
+.elementor-element-b273509 .elementor-element-552df51b .elementor-heading-title,
+.elementor-element-b273509 .elementor-element-59b0393f .elementor-heading-title,
+.elementor-element-7fd76305 .elementor-heading-title {
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  letter-spacing: -0.2px !important;
+}
+
+/* FAQ Left Accent Bars */
+.elementor-element-b273509 .elementor-element-36f7476 > .elementor-widget-container,
+.elementor-element-b273509 .elementor-element-1ec72a87 > .elementor-widget-container,
+.elementor-element-b273509 .elementor-element-552df51b > .elementor-widget-container,
+.elementor-element-b273509 .elementor-element-59b0393f > .elementor-widget-container,
+.elementor-element-7fd76305 .elementor-element-3e84d325 > .elementor-widget-container,
+.elementor-element-7fd76305 .elementor-element-50a9e803 > .elementor-widget-container,
+.elementor-element-7fd76305 .elementor-element-33b827e8 > .elementor-widget-container,
+.elementor-element-7fd76305 .elementor-element-4ba09b7c > .elementor-widget-container {
+  border-left: 3.5px solid #FE5B00 !important;
+  padding-left: 14px !important;
+}
+
+/* FAQ Answers & Paragraphs */
+.elementor-element-b273509 p,
+.elementor-element-b273509 .elementor-widget-text-editor,
+.elementor-element-7fd76305 p,
+.elementor-element-7fd76305 .elementor-widget-text-editor,
+.elementor-element-0c3e649 p,
+.elementor-element-3aaacdc9 p {
+  color: #CBD5E1 !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+}
+
+/* FAQ Divider */
+.elementor-element-b273509 .elementor-divider-separator,
+.elementor-element-7fd76305 .elementor-divider-separator {
+  border-color: rgba(254, 91, 0, 0.25) !important;
+}
+
+/* Bottom CTA Header & Paragraph in FAQ Section */
+.elementor-element-b273509 .elementor-element-2dfb0e77 .elementor-heading-title,
+.elementor-element-7fd76305 .elementor-element-2dfb0e77 .elementor-heading-title {
+  color: #FFFFFF !important;
+  font-size: clamp(26px, 3.6vw, 38px) !important;
+  font-weight: 800 !important;
+  text-align: center !important;
+  margin-bottom: 12px !important;
+}
+.elementor-element-b273509 .elementor-element-512dd640 p,
+.elementor-element-7fd76305 .elementor-element-512dd640 p {
+  color: #E2E8F0 !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  text-align: center !important;
+  max-width: 620px !important;
+  margin: 0 auto 20px auto !important;
+}
+
+/* WhatsApp CTA Button in FAQ Section */
+.elementor-element-21e5ec8e .elementor-button,
+.elementor-element-b273509 .elementor-button {
+  background-color: #FE5B00 !important;
+  color: #FFFFFF !important;
+  border-radius: 30px !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  padding: 13px 32px !important;
+  box-shadow: 0 4px 20px rgba(254, 91, 0, 0.45) !important;
+  border: 1px solid #FE5B00 !important;
+  transition: all 0.3s ease !important;
+}
+.elementor-element-21e5ec8e .elementor-button:hover,
+.elementor-element-b273509 .elementor-button:hover {
+  background-color: #FFFFFF !important;
+  color: #072450 !important;
+  border-color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(255, 255, 255, 0.25) !important;
+}
+
+/* ==========================================================================
+   GLOBAL REMOVAL OF LEGACY YELLOW / MUSTARD BACKGROUNDS
+   ========================================================================== */
+[style*="bg-section-handrawn"],
+[style*="bg-home-handrawn"],
+[style*="bg-job"],
+[style*="bg-fitur"],
+.elementor-element-3aaacdc9,
+.elementor-element-0c3e649,
+.elementor-element-7fd76305,
+.elementor-element-377b6cf9,
+.elementor-element-7ca207e3,
+.elementor-element-283c0e6f,
+.elementor-element-1097bdb6,
+.elementor-element-5b30b558,
+.elementor-element-548374b0 {
+  background-image: none !important;
+}
+.elementor-element-377b6cf9 > .elementor-widget-wrap {
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 100%) !important;
+}
+.elementor-element-377b6cf9 h5,
+.elementor-element-377b6cf9 h2,
+.elementor-element-377b6cf9 p {
+  color: #FFFFFF !important;
 }
 
 /* Global Overflow & Mobile Reset (Using clip to preserve position:sticky functionality) */
@@ -367,7 +683,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: clamp(24px, 2.8vw, 34px) !important;
   font-weight: 800 !important;
-  color: #001630 !important;
+  color: #072450 !important;
   line-height: 1.25 !important;
   margin: 0 0 16px 0 !important;
   letter-spacing: -0.4px !important;
@@ -387,13 +703,13 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 }
 
 .editorial-feature-tags span {
-  background: rgba(0, 22, 48, 0.05) !important;
-  color: #001630 !important;
+  background: rgba(7, 36, 80, 0.05) !important;
+  color: #072450 !important;
   padding: 6px 14px !important;
   border-radius: 20px !important;
   font-size: 12.5px !important;
   font-weight: 600 !important;
-  border: 1px solid rgba(0, 22, 48, 0.08) !important;
+  border: 1px solid rgba(7, 36, 80, 0.08) !important;
 }
 
 .editorial-feature-visual {
@@ -408,7 +724,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   height: auto !important;
   max-height: 380px !important;
   object-fit: contain !important;
-  filter: drop-shadow(0 20px 40px rgba(0, 22, 48, 0.12)) !important;
+  filter: drop-shadow(0 20px 40px rgba(7, 36, 80, 0.12)) !important;
   transition: transform 0.4s ease !important;
 }
 
@@ -485,7 +801,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 12px !important;
   font-weight: 700 !important;
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
   text-transform: uppercase !important;
   letter-spacing: 2.2px !important;
   display: block !important;
@@ -496,7 +812,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: clamp(20px, 2.4vw, 32px) !important;
   font-weight: 800 !important;
-  color: #001630 !important;
+  color: #072450 !important;
   line-height: 1.15 !important;
   letter-spacing: -0.5px !important;
   margin: 0 !important;
@@ -510,8 +826,8 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   height: min(450px, 58vh) !important;
   border-radius: 24px !important;
   overflow: hidden !important;
-  box-shadow: 0 25px 60px -15px rgba(0, 22, 48, 0.24), 0 0 0 1px rgba(0, 22, 48, 0.08) !important;
-  background-color: #001630 !important;
+  box-shadow: 0 25px 60px -15px rgba(7, 36, 80, 0.24), 0 0 0 1px rgba(7, 36, 80, 0.08) !important;
+  background-color: #072450 !important;
   flex-shrink: 0 !important;
 }
 
@@ -568,15 +884,15 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 }
 
 .growth-deck-card.card-align-left .card-overlay-gradient {
-  background: linear-gradient(90deg, rgba(0, 14, 32, 0.95) 0%, rgba(0, 14, 32, 0.85) 45%, rgba(0, 14, 32, 0.15) 100%) !important;
+  background: linear-gradient(90deg, rgba(7, 36, 80, 0.95) 0%, rgba(7, 36, 80, 0.85) 45%, rgba(7, 36, 80, 0.15) 100%) !important;
 }
 
 .growth-deck-card.card-align-right .card-overlay-gradient {
-  background: linear-gradient(270deg, rgba(0, 14, 32, 0.95) 0%, rgba(0, 14, 32, 0.85) 45%, rgba(0, 14, 32, 0.15) 100%) !important;
+  background: linear-gradient(270deg, rgba(7, 36, 80, 0.95) 0%, rgba(7, 36, 80, 0.85) 45%, rgba(7, 36, 80, 0.15) 100%) !important;
 }
 
 .growth-deck-card.card-align-center .card-overlay-gradient {
-  background: radial-gradient(circle at center, rgba(0, 14, 32, 0.65) 0%, rgba(0, 10, 24, 0.95) 100%) !important;
+  background: radial-gradient(circle at center, rgba(7, 36, 80, 0.65) 0%, rgba(0, 10, 24, 0.95) 100%) !important;
 }
 
 /* Card Content Wrap */
@@ -626,7 +942,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
   text-transform: uppercase !important;
   letter-spacing: 2.5px !important;
   display: block !important;
@@ -645,7 +961,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 }
 
 .growth-deck-card .card-stage-title.highlight {
-  color: #FF9E40 !important;
+  color: #FF7726 !important;
 }
 
 .growth-deck-card .card-stage-desc {
@@ -689,7 +1005,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   .growth-deck-card.card-align-left .card-overlay-gradient,
   .growth-deck-card.card-align-right .card-overlay-gradient,
   .growth-deck-card.card-align-center .card-overlay-gradient {
-    background: linear-gradient(180deg, rgba(0, 14, 32, 0.2) 0%, rgba(0, 14, 32, 0.88) 45%, rgba(0, 14, 32, 0.98) 100%) !important;
+    background: linear-gradient(180deg, rgba(7, 36, 80, 0.2) 0%, rgba(7, 36, 80, 0.88) 45%, rgba(7, 36, 80, 0.98) 100%) !important;
   }
   .growth-deck-card .card-text-box,
   .growth-deck-card.card-align-center .card-text-box {
@@ -731,7 +1047,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 }
 .elementor-2087 .elementor-element-2e5d3505,
 .elementor-element-2e5d3505 {
-  background: linear-gradient(135deg, #001630 0%, #082142 50%, #001630 100%) !important;
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
   color: #FFFFFF !important;
   padding: 5.5em 0em 6.5em 0em !important;
   position: relative !important;
@@ -753,7 +1069,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   padding: 45px 0 55px 0 !important;
 }
 .elementor-2087 .elementor-element-48269de9 .elementor-heading-title {
-  color: #001630 !important;
+  color: #072450 !important;
   font-family: 'Space Grotesk', sans-serif !important;
   font-weight: 800 !important;
   font-size: clamp(24px, 3vw, 34px) !important;
@@ -761,7 +1077,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 
 /* ==========================================================================
    WHAT WE BELIEVE (EDITORIAL SIDE-TO-SIDE MASTER SYSTEM)
-   Deep Navy: #001630 | Radiant Orange: #FF7A00 | White: #FFFFFF
+   Deep Navy: #072450 | Radiant Orange: #FE5B00 | White: #FFFFFF
    ========================================================================== */
 .arypro-beliefs-editorial-section {
   position: relative !important;
@@ -769,7 +1085,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   padding: 100px 0 80px 0 !important;
   overflow: hidden !important;
   font-family: 'Mulish', 'Poppins', sans-serif !important;
-  color: #001630 !important;
+  color: #072450 !important;
 }
 
 .arypro-beliefs-editorial-section .beliefs-ambient-glow {
@@ -783,7 +1099,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   height: 500px !important;
   top: -60px !important;
   left: -100px !important;
-  background: radial-gradient(circle, rgba(255, 122, 0, 0.04) 0%, transparent 70%) !important;
+  background: radial-gradient(circle, rgba(254, 91, 0, 0.04) 0%, transparent 70%) !important;
 }
 
 .arypro-beliefs-editorial-section .beliefs-ambient-glow.glow-bottom {
@@ -791,7 +1107,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   height: 550px !important;
   bottom: -60px !important;
   right: -100px !important;
-  background: radial-gradient(circle, rgba(0, 22, 48, 0.03) 0%, transparent 70%) !important;
+  background: radial-gradient(circle, rgba(7, 36, 80, 0.03) 0%, transparent 70%) !important;
 }
 
 /* Container */
@@ -816,7 +1132,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 13px !important;
   font-weight: 700 !important;
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
   text-transform: uppercase !important;
   letter-spacing: 2px !important;
   margin-bottom: 12px !important;
@@ -829,7 +1145,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', 'Poppins', sans-serif !important;
   font-size: clamp(34px, 4.4vw, 48px) !important;
   font-weight: 800 !important;
-  color: #001630 !important;
+  color: #072450 !important;
   line-height: 1.15 !important;
   letter-spacing: -0.8px !important;
   margin: 0 0 18px 0 !important;
@@ -868,9 +1184,9 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
 .arypro-beliefs-editorial-section .spine-line {
   width: 2px !important;
   height: 100% !important;
-  background: linear-gradient(180deg, #FF7A00 0%, #FFA33E 35%, #00529B 70%, #001630 100%) !important;
+  background: linear-gradient(180deg, #FE5B00 0%, #FFA33E 35%, #00529B 70%, #072450 100%) !important;
   border-radius: 2px !important;
-  box-shadow: 0 0 10px rgba(255, 122, 0, 0.3) !important;
+  box-shadow: 0 0 10px rgba(254, 91, 0, 0.3) !important;
 }
 
 /* Alternating Rows (Side to Side, Generous Center Clearance) */
@@ -941,7 +1257,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: 13px !important;
   font-weight: 700 !important;
-  color: #FF7A00 !important;
+  color: #FE5B00 !important;
   text-transform: uppercase !important;
   letter-spacing: 2px !important;
   margin-bottom: 12px !important;
@@ -965,7 +1281,7 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   font-family: 'Space Grotesk', sans-serif !important;
   font-size: clamp(24px, 2.4vw, 30px) !important;
   font-weight: 700 !important;
-  color: #001630 !important;
+  color: #072450 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.4px !important;
   margin: 0 0 14px 0 !important;
@@ -1012,13 +1328,13 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   width: 180px !important;
   height: 180px !important;
   max-width: 100% !important;
-  filter: drop-shadow(0 14px 28px rgba(0, 22, 48, 0.12)) !important;
+  filter: drop-shadow(0 14px 28px rgba(7, 36, 80, 0.12)) !important;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease !important;
 }
 
 .arypro-beliefs-editorial-section .beliefs-ed-row:hover .belief-vector-emblem {
   transform: translateY(-8px) scale(1.05) !important;
-  filter: drop-shadow(0 20px 36px rgba(255, 122, 0, 0.22)) !important;
+  filter: drop-shadow(0 20px 36px rgba(254, 91, 0, 0.22)) !important;
 }
 
 /* ==========================================================================
@@ -1189,5 +1505,707 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   .arypro-beliefs-editorial-section .beliefs-ed-desc {
     font-size: 12px !important;
     line-height: 1.45 !important;
+  }
+}
+
+/* ==========================================================================
+   ARYPRO INTERACTIVE SCROLL-REVEAL FAQ & CTA COMPONENT
+   ========================================================================== */
+.elementor-element-b273509,
+.elementor-2085 .elementor-element.elementor-element-b273509,
+.elementor-element-7fd76305,
+.elementor-2085 .elementor-element.elementor-element-b273509,
+.elementor-2085 .elementor-element.elementor-element-b273509:not(.elementor-motion-effects-element-type-background),
+.elementor-2085 .elementor-element.elementor-element-b273509 > .elementor-motion-effects-container > .elementor-motion-effects-layer,
+.elementor-element.elementor-element-b273509,
+.arypro-faq-section {
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+  background-color: #072450 !important;
+  background-image: none !important;
+  position: relative !important;
+  padding: 85px 0 85px 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  overflow: hidden !important;
+  z-index: 5 !important;
+  color: #FFFFFF !important;
+}
+
+.elementor-element-b273509 > .elementor-shape-top,
+.elementor-element-b273509 > .elementor-shape-bottom,
+.elementor-element-7fd76305 > .elementor-shape-top,
+.elementor-element-7fd76305 > .elementor-shape-bottom {
+  z-index: 3 !important;
+}
+
+.elementor-element-b273509 > .elementor-shape-top .elementor-shape-fill,
+.elementor-element-b273509 > .elementor-shape-bottom .elementor-shape-fill,
+.elementor-element-7fd76305 > .elementor-shape-top .elementor-shape-fill,
+.elementor-element-7fd76305 > .elementor-shape-bottom .elementor-shape-fill {
+  fill: #FFFFFF !important;
+}
+
+.arypro-faq-container {
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  position: relative !important;
+  z-index: 4 !important;
+}
+
+.arypro-faq-header {
+  text-align: center !important;
+  max-width: 820px !important;
+  margin: 0 auto 48px auto !important;
+}
+
+.arypro-faq-kicker {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #FE5B00 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.2px !important;
+  display: inline-block !important;
+  margin-bottom: 12px !important;
+}
+
+.arypro-faq-title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(26px, 3.4vw, 40px) !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.arypro-faq-subtitle {
+  font-family: 'Mulish', sans-serif !important;
+  font-size: clamp(15px, 1.8vw, 17px) !important;
+  line-height: 1.7 !important;
+  color: #CBD5E1 !important;
+  margin: 0 auto !important;
+  max-width: 660px !important;
+}
+
+.arypro-faq-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 24px !important;
+  margin-bottom: 60px !important;
+}
+
+.arypro-faq-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 24px 28px !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  position: relative !important;
+}
+
+.arypro-faq-card.is-revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.arypro-faq-card:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(254, 91, 0, 0.45) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3) !important;
+}
+
+.arypro-faq-card.is-active {
+  background: rgba(255, 255, 255, 0.09) !important;
+  border-color: rgba(254, 91, 0, 0.6) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(254, 91, 0, 0.25) !important;
+}
+
+.arypro-faq-question {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 18px !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+.arypro-faq-q-text {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(16px, 1.8vw, 18.5px) !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+  letter-spacing: -0.2px !important;
+  transition: color 0.2s ease !important;
+}
+
+.arypro-faq-card:hover .arypro-faq-q-text,
+.arypro-faq-card.is-active .arypro-faq-q-text {
+  color: #FFFFFF !important;
+}
+
+.arypro-faq-toggle-icon {
+  flex-shrink: 0 !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: #FE5B00 !important;
+  border: 1px solid #FE5B00 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #FFFFFF !important;
+  font-size: 13px !important;
+  box-shadow: 0 4px 14px rgba(254, 91, 0, 0.4) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.arypro-faq-card:hover .arypro-faq-toggle-icon {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(254, 91, 0, 0.5) !important;
+}
+
+.arypro-faq-card.is-active .arypro-faq-toggle-icon {
+  transform: rotate(45deg) !important;
+  background: #FFFFFF !important;
+  color: #072450 !important;
+  border-color: #FFFFFF !important;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.35) !important;
+}
+
+.arypro-faq-answer {
+  overflow: hidden !important;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, margin-top 0.35s ease !important;
+  margin-top: 14px !important;
+}
+
+.arypro-faq-card.is-collapsed .arypro-faq-answer {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  margin-top: 0 !important;
+}
+
+.arypro-faq-answer p {
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #CBD5E1 !important;
+  margin: 0 !important;
+}
+
+/* Bottom CTA in FAQ Section */
+.arypro-faq-cta-box {
+  text-align: center !important;
+  max-width: 740px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+}
+
+.arypro-faq-cta-divider {
+  width: 100% !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, rgba(254, 91, 0, 0.5), transparent) !important;
+  margin-bottom: 40px !important;
+}
+
+.arypro-faq-cta-title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(24px, 3.2vw, 36px) !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.4px !important;
+  margin: 0 0 14px 0 !important;
+}
+
+.arypro-faq-cta-desc {
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+  color: #CBD5E1 !important;
+  margin: 0 auto 26px auto !important;
+  max-width: 600px !important;
+}
+
+.arypro-faq-cta-btn-wrap {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.arypro-faq-cta-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background-color: #FE5B00 !important;
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  padding: 14px 34px !important;
+  border-radius: 30px !important;
+  text-decoration: none !important;
+  border: 1px solid #FE5B00 !important;
+  box-shadow: 0 6px 22px rgba(254, 91, 0, 0.45) !important;
+  transition: all 0.3s ease !important;
+}
+
+.arypro-faq-cta-btn:hover {
+  background-color: #FFFFFF !important;
+  color: #072450 !important;
+  border-color: #FFFFFF !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 28px rgba(255, 255, 255, 0.25) !important;
+}
+
+@media (max-width: 860px) {
+  .arypro-faq-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+  .arypro-faq-card {
+    padding: 20px 22px !important;
+  }
+  .elementor-element-b273509,
+  .elementor-2085 .elementor-element.elementor-element-b273509,
+  .arypro-faq-section {
+    padding: 65px 0 65px 0 !important;
+  }
+}
+
+/* ==========================================================================
+   GLOBAL BRAND COLOR HARMONIZATION (REPLACING ALL LEGACY YELLOWS WITH BRAND ORANGE/NAVY)
+   ========================================================================== */
+.elementor-element-3aaacdc9,
+.elementor-element-0c3e649,
+.elementor-element-7fd76305,
+.elementor-element-3df381e9,
+.elementor-element-ef25552,
+.elementor-element-7b67a48a,
+.elementor-element-283c0e6f,
+.elementor-element-54024fe6 {
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+  background-image: none !important;
+}
+
+.elementor-element-3aaacdc9 h1, .elementor-element-3aaacdc9 h2, .elementor-element-3aaacdc9 h3, .elementor-element-3aaacdc9 h4, .elementor-element-3aaacdc9 h5, .elementor-element-3aaacdc9 h6,
+.elementor-element-0c3e649 h1, .elementor-element-0c3e649 h2, .elementor-element-0c3e649 h3, .elementor-element-0c3e649 h4, .elementor-element-0c3e649 h5, .elementor-element-0c3e649 h6,
+.elementor-element-7fd76305 h1, .elementor-element-7fd76305 h2, .elementor-element-7fd76305 h3, .elementor-element-7fd76305 h4, .elementor-element-7fd76305 h5, .elementor-element-7fd76305 h6,
+.elementor-element-3df381e9 h1, .elementor-element-3df381e9 h2, .elementor-element-3df381e9 h3, .elementor-element-3df381e9 h4, .elementor-element-3df381e9 h5, .elementor-element-3df381e9 h6,
+.elementor-element-ef25552 h1, .elementor-element-ef25552 h2, .elementor-element-ef25552 h3, .elementor-element-ef25552 h4, .elementor-element-ef25552 h5, .elementor-element-ef25552 h6,
+.elementor-element-7b67a48a h1, .elementor-element-7b67a48a h2, .elementor-element-7b67a48a h3, .elementor-element-7b67a48a h4, .elementor-element-7b67a48a h5, .elementor-element-7b67a48a h6,
+.elementor-element-283c0e6f h1, .elementor-element-283c0e6f h2, .elementor-element-283c0e6f h3, .elementor-element-283c0e6f h4, .elementor-element-283c0e6f h5, .elementor-element-283c0e6f h6,
+.elementor-element-54024fe6 h1, .elementor-element-54024fe6 h2, .elementor-element-54024fe6 h3, .elementor-element-54024fe6 h4, .elementor-element-54024fe6 h5, .elementor-element-54024fe6 h6 {
+  color: #FFFFFF !important;
+}
+
+.elementor-element-3aaacdc9 p,
+.elementor-element-0c3e649 p,
+.elementor-element-7fd76305 p,
+.elementor-element-3df381e9 p,
+.elementor-element-ef25552 p,
+.elementor-element-7b67a48a p,
+.elementor-element-283c0e6f p,
+.elementor-element-54024fe6 p {
+  color: #CBD5E1 !important;
+}
+
+/* Ensure ZERO avatars/photos can appear anywhere in testimonial sections */
+.arypro-testimonial-author-card img,
+.arypro-testimonial-author-card::before,
+.arypro-testimonial-author-card::after,
+.elementor-element-7ca207e3 .elementor-image-box-img,
+.elementor-element-5bff2645 img,
+.elementor-element-4677d043 img,
+.elementor-element-13ec2fa5 img {
+  display: none !important;
+}
+
+/* Yellow text/plus icon color conversions */
+.elementor-element-17d64e3f .elementor-heading-title,
+.elementor-element-7a6843f1 .elementor-heading-title,
+.elementor-element-3a0223e9 .elementor-heading-title,
+.elementor-element-2026fdd1 .elementor-heading-title {
+  color: #FE5B00 !important;
+}
+
+/* Overriding any yellow header container boxes */
+.elementor-2085 .elementor-element.elementor-element-4d87469f > .elementor-widget-container {
+  background-color: #072450 !important;
+}
+
+/* Subpage Hero Global Background & Text Override */
+.elementor-element-595c27ef,
+.elementor-element-2e5d3505,
+.elementor-element-54024fe6,
+.elementor-element-3aaacdc9,
+.elementor-element-15319209,
+.elementor-element-0c3e649,
+.elementor-2097 .elementor-element.elementor-element-595c27ef,
+.elementor-2087 .elementor-element.elementor-element-2e5d3505,
+.elementor-2127 .elementor-element.elementor-element-54024fe6,
+.elementor-2413 .elementor-element.elementor-element-3aaacdc9,
+.elementor-2122 .elementor-element.elementor-element-15319209,
+.elementor-2097 .elementor-element.elementor-element-595c27ef:not(.elementor-motion-effects-element-type-background),
+.elementor-2087 .elementor-element.elementor-element-2e5d3505:not(.elementor-motion-effects-element-type-background),
+.elementor-2127 .elementor-element.elementor-element-54024fe6:not(.elementor-motion-effects-element-type-background),
+.elementor-2097 .elementor-element.elementor-element-595c27ef > .elementor-motion-effects-container > .elementor-motion-effects-layer,
+.elementor-2087 .elementor-element.elementor-element-2e5d3505 > .elementor-motion-effects-container > .elementor-motion-effects-layer,
+.elementor-2127 .elementor-element.elementor-element-54024fe6 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  padding: 45px 0 50px 0 !important;
+  min-height: auto !important;
+  background-color: #072450 !important;
+  background-image: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+  color: #FFFFFF !important;
+}
+
+/* Hide awkward floating doodle icons on subpage heroes */
+.elementor-element-7469ebec,
+.elementor-element-1c5bfea4,
+.elementor-element-1b825b8c {
+  display: none !important;
+}
+
+/* Fix About Us images from overlapping hero text */
+.elementor-2097 .elementor-element.elementor-element-1e44ab8e {
+  margin-top: 25px !important;
+  padding: 0 0 3em 0 !important;
+}
+
+/* Subpage Hero Typography & High Contrast */
+.elementor-element-595c27ef h1,
+.elementor-element-2e5d3505 h1,
+.elementor-element-54024fe6 h1,
+.elementor-element-3aaacdc9 h1,
+.elementor-element-15319209 h1,
+.elementor-element-595c27ef .elementor-heading-title,
+.elementor-element-2e5d3505 .elementor-heading-title,
+.elementor-element-54024fe6 .elementor-heading-title,
+.elementor-element-3aaacdc9 .elementor-heading-title,
+.elementor-element-15319209 .elementor-heading-title,
+.elementor-2097 .elementor-element.elementor-element-595c27ef h1,
+.elementor-2087 .elementor-element.elementor-element-2e5d3505 h1,
+.elementor-2127 .elementor-element.elementor-element-54024fe6 h1,
+.elementor-2097 .elementor-element.elementor-element-595c27ef .elementor-heading-title,
+.elementor-2087 .elementor-element.elementor-element-2e5d3505 .elementor-heading-title,
+.elementor-2127 .elementor-element.elementor-element-54024fe6 .elementor-heading-title {
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(28px, 4vw, 44px) !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px !important;
+  margin-bottom: 12px !important;
+}
+
+.elementor-element-595c27ef p,
+.elementor-element-2e5d3505 p,
+.elementor-element-54024fe6 p,
+.elementor-element-3aaacdc9 p,
+.elementor-element-15319209 p,
+.elementor-2097 .elementor-element.elementor-element-595c27ef p,
+.elementor-2087 .elementor-element.elementor-element-2e5d3505 p,
+.elementor-2127 .elementor-element.elementor-element-54024fe6 p {
+  font-family: 'Mulish', sans-serif !important;
+  font-size: 15.5px !important;
+  line-height: 1.65 !important;
+  color: #E2E8F0 !important;
+  max-width: 700px !important;
+}
+
+/* ==========================================================================
+   CONTACT PAGE SPECIFIC VISIBILITY & FORM STYLING
+   ========================================================================== */
+.elementor-2127 .elementor-element.elementor-element-54024fe6 {
+  padding: 48px 0 48px 0 !important;
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+  background-image: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-ad5ed36 > .elementor-element-populated {
+  padding: 0 5% 0 0 !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-cf12c19 .elementor-heading-title {
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(28px, 3.8vw, 44px) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-6e6c490f p {
+  color: #CBD5E1 !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-2dbd896a .elementor-heading-title,
+.elementor-2127 .elementor-element.elementor-element-751e5b8b .elementor-heading-title,
+.elementor-2127 .elementor-element.elementor-element-482056fa .elementor-heading-title {
+  color: #FE5B00 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  margin-top: 14px !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-1afdcc17 .elementor-heading-title a {
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-580d8493 .elementor-heading-title a {
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+/* Contact Form Card */
+.elementor-2127 .elementor-element.elementor-element-3eec8eef > .elementor-widget-container {
+  background: rgba(7, 36, 80, 0.7) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border: 1px solid rgba(254, 91, 0, 0.4) !important;
+  border-radius: 20px !important;
+  padding: 32px 34px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-3eec8eef .elementor-field-label {
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  margin-bottom: 6px !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-3eec8eef .elementor-field-group .elementor-field {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+  padding: 12px 14px !important;
+  font-family: 'Mulish', sans-serif !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-3eec8eef .elementor-field-group .elementor-field:focus {
+  border-color: #FE5B00 !important;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(254, 91, 0, 0.3) !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-3eec8eef button.elementor-button {
+  background-color: #FE5B00 !important;
+  color: #FFFFFF !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  border-radius: 25px !important;
+  padding: 14px 32px !important;
+  border: 1px solid #FE5B00 !important;
+  box-shadow: 0 6px 20px rgba(254, 91, 0, 0.4) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  width: 100% !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-3eec8eef button.elementor-button:hover {
+  background-color: #FFFFFF !important;
+  color: #072450 !important;
+  border-color: #FFFFFF !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Contact Us Locations & Map */
+.elementor-2127 .elementor-element.elementor-element-16efa038 {
+  padding: 50px 0 30px 0 !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-78f0497b .elementor-heading-title {
+  color: #072450 !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: clamp(24px, 3.2vw, 36px) !important;
+  font-weight: 800 !important;
+  margin-bottom: 25px !important;
+}
+
+.elementor-2127 .elementor-element.elementor-element-6ea4fd0a {
+  margin-top: 1.5em !important;
+  margin-bottom: 3.5em !important;
+}
+
+/* Contact page Map iframe radius */
+.elementor-2127 .elementor-element.elementor-element-609529d5 iframe {
+  border-radius: 16px !important;
+  border: 1px solid #E2E8F0 !important;
+  box-shadow: 0 6px 20px rgba(7, 36, 80, 0.08) !important;
+}
+
+/* ==========================================================================
+   FLOATING WHATSAPP BUTTON (GLOBAL)
+   ========================================================================== */
+.arypro-floating-whatsapp {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 99999;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #FFFFFF !important;
+  padding: 12px 20px 12px 16px;
+  border-radius: 50px;
+  font-family: 'Space Grotesk', -apple-system, sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none !important;
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.arypro-floating-whatsapp:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+  background: #20BA5A;
+  color: #FFFFFF !important;
+}
+
+.arypro-floating-whatsapp i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.arypro-floating-whatsapp .whatsapp-text {
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 767px) {
+  .arypro-floating-whatsapp {
+    bottom: 20px;
+    right: 20px;
+    padding: 14px;
+    border-radius: 50%;
+  }
+  .arypro-floating-whatsapp .whatsapp-text {
+    display: none;
+  }
+  .arypro-floating-whatsapp i {
+    font-size: 26px;
+  }
+}
+
+/* ==========================================================================
+   SERVICES PAGE TESTIMONIAL & GROWTH STATS SECTION (EYE-FRIENDLY LUXURY NAVY)
+   ========================================================================== */
+.elementor-2087 .elementor-element.elementor-element-73c18419,
+.elementor-element-73c18419,
+.elementor-2087 .elementor-element.elementor-element-73c18419:not(.elementor-motion-effects-element-type-background),
+.elementor-2087 .elementor-element.elementor-element-73c18419 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background: linear-gradient(135deg, #072450 0%, #0B2D62 50%, #072450 100%) !important;
+  background-color: #072450 !important;
+  background-image: none !important;
+  padding: 75px 0 70px 0 !important;
+  position: relative !important;
+  color: #FFFFFF !important;
+}
+
+.elementor-2087 .elementor-element.elementor-element-73c18419 > .elementor-shape-top .elementor-shape-fill {
+  fill: #FFFFFF !important;
+}
+
+.elementor-2087 .elementor-element.elementor-element-73c18419 .elementor-testimonial-wrapper .elementor-testimonial-image img,
+.elementor-element-73c18419 .elementor-testimonial-image img {
+  display: block !important;
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 2.5px solid #FFA33E !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+}
+
+.elementor-2087 .elementor-element.elementor-element-73c18419 .elementor-testimonial-job {
+  color: #FFA33E !important;
+}
+
+/* ==========================================================================
+   SLEEK ONE-SIDED CURTAIN TEXT REVEAL TRANSITIONS (GLOBAL)
+   ========================================================================== */
+
+/* 1. Left-to-Right Curtain Reveal (Wipes smoothly from Left to Right like a single curtain drawn open) */
+.arypro-curtain-ltr {
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  transform: translateX(-20px);
+  filter: blur(3px);
+  transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.65s ease,
+              filter 0.65s ease !important;
+  will-change: clip-path, transform, opacity, filter;
+}
+
+.arypro-curtain-ltr.is-curtain-visible {
+  opacity: 1 !important;
+  clip-path: inset(0 0% 0 0) !important;
+  transform: translateX(0) !important;
+  filter: blur(0px) !important;
+}
+
+/* 2. Right-to-Left Curtain Reveal (Wipes smoothly from Right to Left like a single curtain drawn open) */
+.arypro-curtain-rtl {
+  opacity: 0;
+  clip-path: inset(0 0 0 100%);
+  transform: translateX(20px);
+  filter: blur(3px);
+  transition: clip-path 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.65s ease,
+              filter 0.65s ease !important;
+  will-change: clip-path, transform, opacity, filter;
+}
+
+.arypro-curtain-rtl.is-curtain-visible {
+  opacity: 1 !important;
+  clip-path: inset(0 0 0 0) !important;
+  transform: translateX(0) !important;
+  filter: blur(0px) !important;
+}
+
+/* Delay modifiers for sequential text elements */
+.arypro-curtain-delay-1 { transition-delay: 0.12s !important; }
+.arypro-curtain-delay-2 { transition-delay: 0.22s !important; }
+.arypro-curtain-delay-3 { transition-delay: 0.32s !important; }
+
+/* Accessibility fallback */
+@media (prefers-reduced-motion: reduce) {
+  .arypro-curtain-ltr,
+  .arypro-curtain-rtl {
+    opacity: 1 !important;
+    clip-path: none !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
   }
 }
