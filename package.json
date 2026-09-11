@@ -5,8 +5,9 @@
   "scripts": {
     "start": "live-server --port=8080 --mount=/:. --entry-file=index.html --wait=150",
     "dev": "live-server --port=8080 --mount=/:. --entry-file=index.html --wait=150",
-    "build": "echo Static site ready for deployment",
-    "deploy": "wrangler pages deploy . --project-name=aryprobrands",
-    "serve:py": "python -m http.server 8080"
+    "build": "echo Static site ready"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
 }
