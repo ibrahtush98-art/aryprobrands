@@ -1,9 +1,12 @@
 {
-  "name": "socialkit-website",
+  "name": "arypro-brands-solutions",
   "version": "1.0.0",
-  "description": "Socialy - Social Media Marketing Agency Website",
+  "description": "AryPro Brands Solutions - Modern Creative & Digital Marketing Website",
   "scripts": {
-    "start": "python -m http.server 8080",
-    "dev": "python -m http.server 8080"
+    "start": "live-server --port=8080 --mount=/:. --entry-file=index.html --wait=150",
+    "dev": "live-server --port=8080 --mount=/:. --entry-file=index.html --wait=150",
+    "build": "echo Static site ready for deployment",
+    "deploy": "wrangler pages deploy . --project-name=aryprobrands",
+    "serve:py": "python -m http.server 8080"
   }
 }
