@@ -750,22 +750,101 @@ p, h1, h2, h3, h4, h5, h6, span, li, a {
   transform: scale(1.03);
 }
 
+/* Core Capabilities Mobile Side-by-Side Compact Layout */
 @media (max-width: 860px) {
   .arypro-editorial-features-section {
-    padding: 50px 16px !important;
-    gap: 50px !important;
+    padding: 40px 14px !important;
+    gap: 36px !important;
   }
   .editorial-feature-row,
   .editorial-feature-row.row-visual-left {
-    flex-direction: column !important;
-    gap: 25px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+  }
+  .editorial-feature-row.row-visual-left {
+    flex-direction: row-reverse !important;
   }
   .editorial-feature-text {
-    flex: 1 1 100% !important;
-    max-width: 100% !important;
+    flex: 1 1 58% !important;
+    max-width: 60% !important;
+    min-width: 0 !important;
+  }
+  .editorial-feature-title {
+    font-size: clamp(16px, 3.8vw, 22px) !important;
+    line-height: 1.22 !important;
+    margin: 0 0 8px 0 !important;
+    letter-spacing: -0.3px !important;
+  }
+  .editorial-feature-desc {
+    font-size: clamp(12px, 2.7vw, 14px) !important;
+    line-height: 1.45 !important;
+    margin: 0 0 10px 0 !important;
+  }
+  .editorial-feature-tags {
+    gap: 5px !important;
+  }
+  .editorial-feature-tags span {
+    padding: 3px 9px !important;
+    font-size: clamp(9.5px, 2.2vw, 11px) !important;
+    border-radius: 14px !important;
+    line-height: 1.3 !important;
+  }
+  .editorial-feature-visual {
+    flex: 1 1 40% !important;
+    max-width: 40% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 0 !important;
   }
   .editorial-feature-visual img {
-    max-height: 260px !important;
+    max-width: 100% !important;
+    max-height: clamp(140px, 32vw, 220px) !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 10px 20px rgba(7, 36, 80, 0.12)) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .arypro-editorial-features-section {
+    padding: 30px 8px !important;
+    gap: 28px !important;
+  }
+  .editorial-feature-row,
+  .editorial-feature-row.row-visual-left {
+    gap: 10px !important;
+  }
+  .editorial-feature-text {
+    flex: 1 1 60% !important;
+    max-width: 62% !important;
+  }
+  .editorial-feature-title {
+    font-size: 15px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 6px !important;
+  }
+  .editorial-feature-desc {
+    font-size: 11px !important;
+    line-height: 1.38 !important;
+    margin-bottom: 7px !important;
+  }
+  .editorial-feature-tags {
+    gap: 4px !important;
+  }
+  .editorial-feature-tags span {
+    padding: 2px 7px !important;
+    font-size: 9px !important;
+    border-radius: 10px !important;
+  }
+  .editorial-feature-visual {
+    flex: 1 1 38% !important;
+    max-width: 38% !important;
+  }
+  .editorial-feature-visual img {
+    max-height: 125px !important;
   }
 }
 
